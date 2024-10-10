@@ -1,7 +1,2 @@
-﻿  pch.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
-  Game.cpp
-  InputManager.cpp
-  WindowsProject_First.cpp
-  코드를 생성하고 있습니다...
+﻿  Game.cpp
   WindowsProject_First.vcxproj -> D:\CProject\WinPie\FirstProject\WindowsProject_First\x64\Debug\WindowsProject_First.exe
