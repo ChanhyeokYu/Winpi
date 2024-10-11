@@ -77,6 +77,9 @@
     <ClCompile Include="Missile.cpp">
       <Filter>소스 파일\Objects\Game</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowsProject_First.rc">
@@ -142,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="Missile.h">
       <Filter>소스 파일\Objects\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "GameScene.h"
+#include "Player.h"
+#include "Monster.h"
 
 GameScene::GameScene()
 {

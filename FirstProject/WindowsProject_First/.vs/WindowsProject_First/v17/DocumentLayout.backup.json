@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\ObjectManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\DevScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\DevScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,36 +39,16 @@
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\WindowsProject_First.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CPROJECT\\WINPIE\\FIRSTPROJECT\\WINDOWSPROJECT_FIRST\\WINDOWSPROJECT_FIRST\\RESOURCE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WINDOWSPROJECT_FIRST\\RESOURCE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\DevScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\TimeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\TimeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -69,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\EditScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\EditScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\DevScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\SceneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -121,6 +125,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D9FE6EAE-1ABA-4B13-82C8-612F7D11BEAD}|WindowsProject_First\\WindowsProject_First.vcxproj|solutionrelative:WindowsProject_First\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsProject_First\\Resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -129,12 +137,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 158,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 224,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Missile.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Missile.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Missile.h",
@@ -142,12 +150,11 @@
               "RelativeToolTip": "WindowsProject_First\\Missile.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T02:00:29.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T02:00:29.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Monster.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Monster.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Monster.h",
@@ -155,12 +162,11 @@
               "RelativeToolTip": "WindowsProject_First\\Monster.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T02:00:15.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T02:00:15.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Player.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Player.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Player.h",
@@ -168,8 +174,7 @@
               "RelativeToolTip": "WindowsProject_First\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T01:59:50.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T01:59:50.3Z"
             },
             {
               "$type": "Document",
@@ -186,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Enum.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Enum.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Enum.h",
@@ -198,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "EditScene.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\EditScene.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\EditScene.h",
@@ -206,12 +211,11 @@
               "RelativeToolTip": "WindowsProject_First\\EditScene.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T00:33:29.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T00:33:29.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Utils.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Utils.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Utils.h",
@@ -223,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "DevScene.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\DevScene.h",
@@ -236,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Scene.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Scene.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Scene.h",
@@ -248,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Types.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Types.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Types.h",
@@ -260,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Game.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Game.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Game.h",
@@ -272,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TimeManager.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\TimeManager.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\TimeManager.h",
@@ -280,12 +284,11 @@
               "RelativeToolTip": "WindowsProject_First\\TimeManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-09T04:05:48.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T04:05:48.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "SceneManager.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\SceneManager.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\SceneManager.h",
@@ -293,12 +296,11 @@
               "RelativeToolTip": "WindowsProject_First\\SceneManager.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwBAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T00:36:56.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T00:36:56.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "GameScene.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\GameScene.h",
@@ -311,7 +313,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
+              "Title": "ObjectManager.h",
+              "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.h",
+              "RelativeDocumentMoniker": "WindowsProject_First\\ObjectManager.h",
+              "ToolTip": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.h",
+              "RelativeToolTip": "WindowsProject_First\\ObjectManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-11T08:24:39.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Object.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Object.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Object.h",
@@ -319,18 +334,30 @@
               "RelativeToolTip": "WindowsProject_First\\Object.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T01:55:01.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T01:55:01.682Z"
             }
           ]
         },
         {
-          "DockedWidth": 262,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 196,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ObjectManager.cpp",
+              "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.cpp",
+              "RelativeDocumentMoniker": "WindowsProject_First\\ObjectManager.cpp",
+              "ToolTip": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\ObjectManager.cpp",
+              "RelativeToolTip": "WindowsProject_First\\ObjectManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-11T08:24:43.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "Resource.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Resource.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\Resource.h",
@@ -338,12 +365,11 @@
               "RelativeToolTip": "WindowsProject_First\\Resource.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T02:29:48.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T02:29:48.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "WindowsProject_First.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\WindowsProject_First.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\WindowsProject_First.cpp",
@@ -351,12 +377,11 @@
               "RelativeToolTip": "WindowsProject_First\\WindowsProject_First.cpp",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T02:04:53.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T02:04:53.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Object.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Object.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\Object.cpp",
@@ -364,12 +389,11 @@
               "RelativeToolTip": "WindowsProject_First\\Object.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T01:55:09.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T01:55:09.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "defines.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\defines.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\defines.h",
@@ -381,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "InputManager.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\InputManager.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\InputManager.h",
@@ -393,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "InputManager.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\InputManager.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\InputManager.cpp",
@@ -405,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "pch.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\pch.h",
               "RelativeDocumentMoniker": "WindowsProject_First\\pch.h",
@@ -417,20 +441,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "GameScene.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\GameScene.cpp",
               "ToolTip": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\GameScene.cpp",
               "RelativeToolTip": "WindowsProject_First\\GameScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-11T00:45:56.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "SceneManager.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\SceneManager.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\SceneManager.cpp",
@@ -438,12 +462,11 @@
               "RelativeToolTip": "WindowsProject_First\\SceneManager.cpp",
               "ViewState": "AgIAAAcAAAAAAAAAAAAowBMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T00:37:02.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T00:37:02.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Game.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Game.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\Game.cpp",
@@ -456,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Player.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Player.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\Player.cpp",
@@ -464,12 +487,11 @@
               "RelativeToolTip": "WindowsProject_First\\Player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T02:01:13.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T02:01:13.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Scene.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Scene.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\Scene.cpp",
@@ -481,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DevScene.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\DevScene.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\DevScene.cpp",
@@ -494,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Utils.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\Utils.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\Utils.cpp",
@@ -502,12 +524,11 @@
               "RelativeToolTip": "WindowsProject_First\\Utils.cpp",
               "ViewState": "AgIAAAQAAAAAAAAAAADwvxMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-10T11:56:42.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T11:56:42.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "EditScene.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\FirstProject\\WindowsProject_First\\WindowsProject_First\\EditScene.cpp",
               "RelativeDocumentMoniker": "WindowsProject_First\\EditScene.cpp",
