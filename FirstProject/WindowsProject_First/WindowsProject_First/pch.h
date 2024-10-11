@@ -17,3 +17,4 @@ using namespace std;
 #include "Types.h"
 #include "defines.h"
 #include "Utils.h"
+#include "Enum.h"

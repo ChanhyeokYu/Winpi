@@ -1,2 +1,40 @@
-﻿  Game.cpp
+﻿  pch.cpp
+  DevScene.cpp
+  EditScene.cpp
+  Game.cpp
+  GameScene.cpp
+  InputManager.cpp
+  Scene.cpp
+  SceneManager.cpp
+  TimeManager.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TimeManager.cpp(20,15): warning C4244: '=': 'uint64'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TimeManager.cpp'을(를) 컴파일하는 중)
+  
+  Utils.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(27,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(26,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(25,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(24,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(32,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(32,22): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(33,24): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(33,18): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+  WindowsProject_First.cpp
+  코드를 생성하고 있습니다...
   WindowsProject_First.vcxproj -> D:\CProject\WinPie\FirstProject\WindowsProject_First\x64\Debug\WindowsProject_First.exe

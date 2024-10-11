@@ -50,6 +50,15 @@
     <ClCompile Include="Utils.cpp">
       <Filter>소스 파일\Header</Filter>
     </ClCompile>
+    <ClCompile Include="EditScene.cpp">
+      <Filter>소스 파일\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\Scene\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowsProject_First.rc">
@@ -91,6 +100,18 @@
     </ClInclude>
     <ClInclude Include="Utils.h">
       <Filter>소스 파일\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="EditScene.h">
+      <Filter>소스 파일\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>소스 파일\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>소스 파일\Scene\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
