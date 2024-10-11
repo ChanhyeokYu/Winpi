@@ -3,7 +3,11 @@ D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditSc
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Game.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Game.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\GameScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\GameScene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\InputManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\InputManager.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Missile.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Missile.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Monster.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Monster.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Object.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Object.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\pch.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\pch.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Player.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Player.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Scene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Scene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SceneManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\SceneManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TimeManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\TimeManager.obj

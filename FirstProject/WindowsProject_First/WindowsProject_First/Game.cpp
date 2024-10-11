@@ -2,6 +2,7 @@
 #include "Game.h"
 #include "InputManager.h"
 #include "TimeManager.h"
+#include "SceneManager.h"
 
 Game::Game()
 {
@@ -9,6 +10,7 @@ Game::Game()
 
 Game::~Game()
 {
+	GET_SINGLE(SceneManager)->Clear();
 }
 
 void Game::Init(HWND hwnd)
@@ -25,14 +27,16 @@ void Game::Init(HWND hwnd)
 
 	GET_SINGLE(TimeManager)->Init();
 	GET_SINGLE(InputManager)->Init(hwnd);
+	GET_SINGLE(SceneManager)->Init();
 
-	
+	GET_SINGLE(SceneManager)->ChangeSdcene(SceneType::DevScene);
 }
 
 void Game::Update()
 {
 	GET_SINGLE(InputManager)->Update();
 	GET_SINGLE(TimeManager)->Update();
+	GET_SINGLE(SceneManager)->Update();
 }
 
 void Game::Render()
@@ -52,5 +56,9 @@ void Game::Render()
 		::TextOut(_hdcBack, 650, 10, str.c_str(), static_cast<int32>(str.size()));
 	}
 
+	GET_SINGLE(SceneManager)->Render(_hdcBack);
+
+	::BitBlt(_hdc, 0, 0, _rect.right, _rect.bottom, _hdcBack, 0, 0, SRCCOPY);
+	::PatBlt(_hdcBack, 0, 0, _rect.right, _rect.bottom, WHITENESS);
 
 }

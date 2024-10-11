@@ -17,7 +17,7 @@ void TimeManager::Update()
 	_prevCount = currentCount;
 
 	_frameCount++;
-	_frameTime = currentCount;
+	_frameTime += _deltaTime;
 
 	if (_frameTime>=1.f)
 	{

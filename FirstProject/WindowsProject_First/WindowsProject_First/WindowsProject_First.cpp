@@ -4,6 +4,7 @@
 #include "framework.h"
 #include "WindowsProject_First.h"
 #include "Game.h"
+#include "resource.h"
 
 #define MAX_LOADSTRING 100
 
@@ -22,8 +23,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
 
-
-
     MyRegisterClass(hInstance);
 
     // 애플리케이션 초기화를 수행합니다:
@@ -32,6 +31,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
     }
 
+    Game game;
+    game.Init(g_hwnd);
 
     MSG msg = {};
     uint64 prevTick = 0;
@@ -50,7 +51,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
             if (now - prevTick >= 10)
             {
-
+                game.Update();
+                game.Render();
+                prevTick = now;
             }
         }
     }
