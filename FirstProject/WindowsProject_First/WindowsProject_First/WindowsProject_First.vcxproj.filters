@@ -30,6 +30,12 @@
     <Filter Include="소스 파일\Objects\Game">
       <UniqueIdentifier>{98997c96-b8d1-43cc-95d2-ef49ea04725e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Resource">
+      <UniqueIdentifier>{283e1e97-818c-401a-88e5-c52992bc3f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Resource\Game">
+      <UniqueIdentifier>{9032d746-913d-4cfa-9818-23b79ccfb25a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsProject_First.cpp">
@@ -78,6 +84,15 @@
       <Filter>소스 파일\Objects\Game</Filter>
     </ClCompile>
     <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>소스 파일\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="LineMesh.cpp">
+      <Filter>소스 파일\Resource\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
       <Filter>소스 파일\Manager</Filter>
     </ClCompile>
   </ItemGroup>
@@ -147,6 +162,15 @@
       <Filter>소스 파일\Objects\Game</Filter>
     </ClInclude>
     <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>소스 파일\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="LineMesh.h">
+      <Filter>소스 파일\Resource\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
       <Filter>소스 파일\Manager</Filter>
     </ClInclude>
   </ItemGroup>

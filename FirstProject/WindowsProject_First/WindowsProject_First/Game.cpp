@@ -29,7 +29,7 @@ void Game::Init(HWND hwnd)
 	GET_SINGLE(InputManager)->Init(hwnd);
 	GET_SINGLE(SceneManager)->Init();
 
-	GET_SINGLE(SceneManager)->ChangeSdcene(SceneType::DevScene);
+	GET_SINGLE(SceneManager)->ChangeSdcene(SceneType::EditScene);
 }
 
 void Game::Update()

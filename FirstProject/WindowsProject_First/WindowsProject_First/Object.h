@@ -25,7 +25,7 @@ public:
 
 	Pos GetPos() { return _pos; }
 	void SetPos(Pos pos) { _pos = pos; }
-private:
+protected:
 	ObjectType _objectType = ObjectType::None;
 	Stat _Stat = {};
 	Pos _pos = {};
