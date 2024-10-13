@@ -24,7 +24,7 @@ void Missile::Update()
 	// 프레임 시간
 	float delteTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 	// 시간에 따른 이동(투사체의 이동속도)
-	_pos.y = delteTime * _Stat.Speed;
+	_pos.y -= delteTime * _Stat.Speed;
 	
 	//오브젝트 매니저에서 충돌할 목표 검색
 	const vector<Object*> objects = GET_SINGLE(ObjectManager)->GetObjects();
@@ -38,7 +38,7 @@ void Missile::Update()
 		}
 		
 		// 몬스터가 아니면 넘기기
-		if (object->GetObjectType() != ObjectType::Monster)
+ 		if (object->GetObjectType() != ObjectType::Monster)
 		{
 			continue;
 		}

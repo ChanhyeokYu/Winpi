@@ -13,10 +13,10 @@ public:
 	virtual void Render(HDC hdc);
 
 private:
-	vector<pair<POINT, POINT>> _line;
+	vector<pair<POINT, POINT>> _lines;
 
 	bool _setOrigin = true;
-	POINT _lastPo = {};
+	POINT _lastPos = {};
 
 };
 

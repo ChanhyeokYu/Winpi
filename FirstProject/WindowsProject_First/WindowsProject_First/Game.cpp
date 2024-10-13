@@ -3,6 +3,7 @@
 #include "InputManager.h"
 #include "TimeManager.h"
 #include "SceneManager.h"
+#include "ResourceManager.h"
 
 Game::Game()
 {
@@ -11,6 +12,7 @@ Game::Game()
 Game::~Game()
 {
 	GET_SINGLE(SceneManager)->Clear();
+	GET_SINGLE(ResourceManager)->Clear();
 }
 
 void Game::Init(HWND hwnd)
@@ -28,8 +30,10 @@ void Game::Init(HWND hwnd)
 	GET_SINGLE(TimeManager)->Init();
 	GET_SINGLE(InputManager)->Init(hwnd);
 	GET_SINGLE(SceneManager)->Init();
+	GET_SINGLE(ResourceManager)->Init();
 
-	GET_SINGLE(SceneManager)->ChangeSdcene(SceneType::EditScene);
+
+	GET_SINGLE(SceneManager)->ChangeSdcene(SceneType::GameScene);
 }
 
 void Game::Update()
@@ -52,7 +56,7 @@ void Game::Render()
 	}
 
 	{
-		wstring str = std::format(L"FPS ({0}), DT({1})ms", fps, deltaTime, static_cast<int32>(deltaTime * 1000));
+		wstring str = std::format(L"FPS ({0}), DT({1})ms", fps, static_cast<int32>(deltaTime * 1000));
 		::TextOut(_hdcBack, 650, 10, str.c_str(), static_cast<int32>(str.size()));
 	}
 

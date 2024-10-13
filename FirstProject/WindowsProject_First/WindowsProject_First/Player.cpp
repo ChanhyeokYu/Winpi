@@ -49,11 +49,11 @@ void Player::Update()
 		_pos.y += delteTime * _Stat.Speed;
 	}
 
-	if (GET_SINGLE(InputManager)->GetButton(KeyType::SpaceBar))
+	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::SpaceBar))
 	{
 		Missile* misslie = GET_SINGLE(ObjectManager)->CreateObject<Missile>();
 		misslie->SetPos(_pos);
-		GET_SINGLE(ObjectManager)->Add(misslie);
+ 		GET_SINGLE(ObjectManager)->Add(misslie);
 	}
 
 }

@@ -29,7 +29,7 @@ void ObjectManager::Remove(Object* object)
 		return;
 	}
 
-	auto findit = std::find(_objects.begin(), _objects.end(), object);
+	auto findit = std::remove(_objects.begin(), _objects.end(), object);
 	_objects.erase(findit, _objects.end());
 
 	delete object;
