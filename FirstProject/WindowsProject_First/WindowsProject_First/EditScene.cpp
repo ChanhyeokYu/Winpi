@@ -55,8 +55,8 @@ void EditScene::Update()
 
 			minX = min(min(minX, from.x), to.x);
 			maxX = max(max(maxX, from.x), to.x);
-			minY = min(min(minY, from.y), to.x);
-			maxY = max(max(maxY, from.y), to.x);
+			minY = min(min(minY, from.y), to.y);
+			maxY = max(max(maxY, from.y), to.y);
 
 		}
 

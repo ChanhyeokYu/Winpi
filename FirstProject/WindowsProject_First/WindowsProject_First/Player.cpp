@@ -49,10 +49,22 @@ void Player::Update()
 		_pos.y += delteTime * _Stat.Speed;
 	}
 
+	if (GET_SINGLE(InputManager)->GetButton(KeyType::Q))
+	{
+		_barrelAngle += delteTime * 10;
+	}
+
+	if (GET_SINGLE(InputManager)->GetButton(KeyType::E))
+	{
+		_barrelAngle -= delteTime * 10;
+	}
+
+
 	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::SpaceBar))
 	{
 		Missile* misslie = GET_SINGLE(ObjectManager)->CreateObject<Missile>();
 		misslie->SetPos(_pos);
+		misslie->SetAngle(_barrelAngle);
  		GET_SINGLE(ObjectManager)->Add(misslie);
 	}
 
@@ -65,4 +77,22 @@ void Player::Render(HDC hdc)
 	{
 		mesh->Render(hdc, _pos);
 	}
+
+	Pos firePos = GetFirePos();
+
+	HPEN pen = ::CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
+	HPEN oldpen = static_cast<HPEN>(SelectObject(hdc, static_cast<HGDIOBJ>(pen)));
+	Utils::DrawLine(hdc, _pos, firePos);
+	::SelectObject(hdc, oldpen);
+	::DeleteObject(pen);
+
+}
+
+Pos Player::GetFirePos()
+{
+	Pos firePos = _pos;
+	firePos.x += _barrelLength * cos(_barrelAngle);
+	firePos.y -= _barrelLength * sin(_barrelAngle);
+
+	return firePos;
 }

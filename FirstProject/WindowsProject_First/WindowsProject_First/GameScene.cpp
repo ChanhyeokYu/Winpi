@@ -23,10 +23,10 @@ void GameScene::Init()
 	player->SetPos(Pos{400,400});
 	// 생성된 오브젝를 매니저에 등록
 	GET_SINGLE(ObjectManager)->Add(player);
-	for (uint32 i = 0; i < 5; i++)
+	//for (uint32 i = 0; i < 5; i++)
 	{
 		Monster* monster = GET_SINGLE(ObjectManager)->CreateObject<Monster>();
-		monster->SetPos(Pos{ static_cast<float>((i+1)*100),100});
+		monster->SetPos(Pos{100,100});
 		GET_SINGLE(ObjectManager)->Add(monster);
 	}
 
