@@ -20,6 +20,8 @@ struct Vector
 {
 	Vector(){}
 	Vector(float x, float y) : x(x), y(y) {}
+	// 벡터의 마우스 포인터 값 기본 생성자
+	Vector(POINT pt) : x(static_cast<float>(pt.x)),y(static_cast<float>(pt.y)) {}
 
 	Vector	operator+(const Vector& other)
 	{
@@ -86,6 +88,11 @@ struct Vector
 
 	}
 
+	float Dot(Vector other)
+	{
+		// 내적 예각 내 대각 길이 계산
+		return x * other.x + y * other.y;
+	}
 
 	float x = 0;
 	float y = 0;

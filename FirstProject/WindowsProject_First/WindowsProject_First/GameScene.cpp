@@ -18,17 +18,19 @@ GameScene::~GameScene()
 void GameScene::Init()
 {
 	// 사용할 오브젝트 생성
-	Player* player = GET_SINGLE(ObjectManager)->CreateObject<Player>();
+	Monster* monster = GET_SINGLE(ObjectManager)->CreateObject<Monster>();
 	// 생성된 오브젝의 초기 위치 조정
-	player->SetPos(Pos{400,400});
+	monster->SetPos(Pos{400,400});
 	// 생성된 오브젝를 매니저에 등록
-	GET_SINGLE(ObjectManager)->Add(player);
+	GET_SINGLE(ObjectManager)->Add(monster);
+
+
 	//for (uint32 i = 0; i < 5; i++)
-	{
-		Monster* monster = GET_SINGLE(ObjectManager)->CreateObject<Monster>();
-		monster->SetPos(Pos{100,100});
-		GET_SINGLE(ObjectManager)->Add(monster);
-	}
+	//{
+	//	Monster* monster = GET_SINGLE(ObjectManager)->CreateObject<Monster>();
+	//	monster->SetPos(Pos{100,100});
+	//	GET_SINGLE(ObjectManager)->Add(monster);
+	//}
 
 }
 
