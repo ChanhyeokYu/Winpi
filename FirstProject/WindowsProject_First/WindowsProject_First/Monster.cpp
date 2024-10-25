@@ -16,35 +16,17 @@ void Monster::Init()
 	_Stat.maxHp= 100;
 	_Stat.Speed = 10;
 
+	_pos = Pos{ 400,300 };
+
+	_lookPos = Pos{ 550,70 };
+	_lookDir = _lookPos - _pos;
+	_lookDir.Normalize();
+
 }
 
 void Monster::Update()
 {
-	Vector mousePos = GET_SINGLE(InputManager)->GetMousePos();
-
-	// 정해진 범위 계산
-	Vector v1 = _end - _start;
-
-	// 마우스와 코사인 대각 계산
-	Vector v2 = mousePos - _start;
-
-	// 특정 경로의 최대 길이
-	float maxLength = v1.Length();
-	// 해당 범위 정규화
-	v1.Normalize();
-
-	// 정해진 경로의 대각 계산
-	float dot = v1.Dot(v2);
-
-	Pos pos = _start + v1 * dot;
 	
-	// 범위르 넘어서거나 시작지를 넘어갈때 바로 식에서 빠지기
-	if (dot < 0 || dot > maxLength)
-	{
-		return;
-	}
-
-	_pos = pos;
 }
 
 void Monster::Render(HDC hdc)
@@ -54,8 +36,35 @@ void Monster::Render(HDC hdc)
 	HPEN pen = ::CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
 	HPEN oldpen = static_cast<HPEN>(::SelectObject(hdc, static_cast<HGDIOBJ>(pen)));
 	{
-		Utils::DrawLine(hdc, _start, _end);
+		Utils::DrawLine(hdc, _pos, _lookPos);
 	}
 	::SelectObject(hdc, oldpen);
 	::DeleteObject(pen);
+
+	Vector mousePos = GET_SINGLE(InputManager)->GetMousePos();
+	Vector dir = _lookDir;
+	dir.Normalize();
+
+	Vector monsterToMouseDir = mousePos - _pos;
+	monsterToMouseDir.Normalize();
+
+	float dot = monsterToMouseDir.Dot(dir);
+	float rad = ::acos(dot);
+	float angle = rad * 180 / 3.14;
+
+	float cross = _lookDir.Cross(monsterToMouseDir);
+	if (cross < 0)
+	{
+		angle = 360 - angle;
+	}
+
+	{
+		Utils::DrawLine(hdc, _pos, mousePos);
+	}
+
+	{
+		wstring wstr = std::format(L"angle({0})", angle);
+		Utils::DrawTextW(hdc, {20, 50}, wstr);
+	}
+
 }

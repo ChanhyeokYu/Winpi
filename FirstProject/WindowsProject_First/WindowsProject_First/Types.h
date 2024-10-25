@@ -63,7 +63,7 @@ struct Vector
 	void operator*=(float value)
 	{
 		x *= x = value;
-		y *= x = value;
+		y *= y = value;
 	}
 
 	float LengthSquared()
@@ -92,6 +92,11 @@ struct Vector
 	{
 		// 내적 예각 내 대각 길이 계산
 		return x * other.x + y * other.y;
+	}
+
+	float Cross(Vector other)
+	{
+		return x * other.y - y * other.x;
 	}
 
 	float x = 0;

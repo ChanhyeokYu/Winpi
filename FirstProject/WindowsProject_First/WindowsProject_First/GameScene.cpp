@@ -20,7 +20,7 @@ void GameScene::Init()
 	// 사용할 오브젝트 생성
 	Monster* monster = GET_SINGLE(ObjectManager)->CreateObject<Monster>();
 	// 생성된 오브젝의 초기 위치 조정
-	monster->SetPos(Pos{400,400});
+	//monster->SetPos(Pos{400,400});
 	// 생성된 오브젝를 매니저에 등록
 	GET_SINGLE(ObjectManager)->Add(monster);
 
