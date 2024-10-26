@@ -1,11 +1,11 @@
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Bullet.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Bullet.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\DevScene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\EditScene.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\FortressScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\FortressScene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Game.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Game.obj
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\GameScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\GameScene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\InputManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\InputManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\LineMesh.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\LineMesh.obj
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Missile.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Missile.obj
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Monster.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Monster.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\MenuScene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\MenuScene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Object.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Object.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\ObjectManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\ObjectManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\pch.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\pch.obj
@@ -15,5 +15,6 @@ D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Resour
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Scene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Scene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SceneManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\SceneManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TimeManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\TimeManager.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\UIManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\UIManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\Utils.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\WindowsProject_First.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\x64\Debug\WindowsProject_First.obj

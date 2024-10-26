@@ -1,17 +1,15 @@
 #pragma once
 #include "Scene.h"
-class GameScene :
+class FortressScene :
     public Scene
 {
 public:
-    GameScene();
-    virtual ~GameScene() override;
+    FortressScene();
+    virtual ~FortressScene() override;
 
 public:
     virtual void Init() override;
     virtual void Update() override;
     virtual void Render(HDC hdc) override;
-
-
 };
 
