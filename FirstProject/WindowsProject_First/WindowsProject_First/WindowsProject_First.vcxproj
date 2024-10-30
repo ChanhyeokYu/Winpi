@@ -138,6 +138,8 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="DevScene.cpp" />
     <ClCompile Include="EditScene.cpp" />
+    <ClCompile Include="Flipbook.cpp" />
+    <ClCompile Include="FlipbookActor.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="InputManager.cpp" />
@@ -173,6 +175,8 @@
     <ClInclude Include="DevScene.h" />
     <ClInclude Include="EditScene.h" />
     <ClInclude Include="Enum.h" />
+    <ClInclude Include="Flipbook.h" />
+    <ClInclude Include="FlipbookActor.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="InputManager.h" />

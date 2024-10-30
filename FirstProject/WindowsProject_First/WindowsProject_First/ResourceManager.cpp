@@ -2,6 +2,7 @@
 #include "ResourceManager.h"
 #include "Texture.h"
 #include "Sprite.h"
+#include "Flipbook.h"
 
 ResourceManager::~ResourceManager()
 {
@@ -23,6 +24,19 @@ void ResourceManager::Clear()
 		SAFE_DELETE(item.second);
 	}
 	_textures.clear();
+
+	for (auto& item : _sprites)
+	{
+		SAFE_DELETE(item.second);
+	}
+	_sprites.clear();
+
+	for (auto& item : _flipbooks)
+	{
+		SAFE_DELETE(item.second);
+	}
+	_flipbooks.clear();
+
 
 }
 
@@ -58,5 +72,19 @@ Sprite* ResourceManager::CreateSprite(const wstring& key, Texture* texture, int3
 	_sprites[key] = sprite;
 
 	return sprite;
+}
+
+Flipbook* ResourceManager::CreateFlipbook(const wstring& key)
+{
+	if (_flipbooks.find(key) != _flipbooks.end())
+	{
+		return _flipbooks[key];
+	}
+
+	Flipbook* fb = new Flipbook();
+	_flipbooks[key] = fb;
+
+	return fb;
+
 }
 

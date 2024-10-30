@@ -21,3 +21,5 @@ namespace fs = std::filesystem;
 #include "Utils.h"
 #include "Enum.h"
 #include "Values.h"
+
+#pragma comment(lib, "msimg32.lib")

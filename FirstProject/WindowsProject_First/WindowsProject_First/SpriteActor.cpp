@@ -31,7 +31,7 @@ void Spriteactor::Render(HDC hdc)
 
 	VectorInt size = _sprite->GetSize();
 
-	::BitBlt(hdc,
+	/*::BitBlt(hdc,
 		static_cast<int32>(_pos.x) - size.x / 2,
 		static_cast<int32>(_pos.y) - size.y / 2,
 		size.x,
@@ -39,5 +39,20 @@ void Spriteactor::Render(HDC hdc)
 		_sprite->GetDC(),
 		_sprite->GetPos().x,
 		_sprite->GetPos().y,
-		SRCCOPY);
+		SRCCOPY);*/
+
+	::TransparentBlt(
+		hdc,
+		static_cast<int32>(_pos.x) - size.x / 2,
+		static_cast<int32>(_pos.y) - size.y / 2,
+		size.x,
+		size.y,
+		_sprite->GetDC(),
+		_sprite->GetPos().x,
+		_sprite->GetPos().y,
+		_sprite->GetSize().x,
+		_sprite->GetSize().y,
+		_sprite->GetTransparent()
+		);
+
 }

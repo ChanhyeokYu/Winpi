@@ -116,6 +116,12 @@
     <ClCompile Include="PlayerMoveScript.cpp">
       <Filter>소스 파일\Component\Game</Filter>
     </ClCompile>
+    <ClCompile Include="Flipbook.cpp">
+      <Filter>소스 파일\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="FlipbookActor.cpp">
+      <Filter>소스 파일\Objects\Unreal</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowsProject_First.rc">
@@ -205,6 +211,12 @@
     </ClInclude>
     <ClInclude Include="PlayerMoveScript.h">
       <Filter>소스 파일\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Flipbook.h">
+      <Filter>소스 파일\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="FlipbookActor.h">
+      <Filter>소스 파일\Objects\Unreal</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
