@@ -1,4 +1,7 @@
 #pragma once
+
+class actor;
+
 class Scene
 {
 public:
@@ -10,5 +13,7 @@ public:
 	virtual void Update() abstract;
 	virtual void Render(HDC hdc) abstract;
 
+protected:
+	actor* _background;
 };
 

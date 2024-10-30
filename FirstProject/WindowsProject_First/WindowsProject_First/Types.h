@@ -103,4 +103,64 @@ struct Vector
 	float y = 0;
 };
 
+
+struct VectorInt
+{
+	VectorInt() {}
+	VectorInt(int32 x, int32 y) : x(x), y(y) {}
+	// 벡터의 마우스 포인터 값 기본 생성자
+	VectorInt(POINT pt) : x(static_cast<int32>(pt.x)), y(static_cast<int32>(pt.y)) {}
+
+	VectorInt	operator+(const VectorInt& other)
+	{
+		VectorInt ret;
+		ret.x = x + other.x;
+		ret.y = y + other.y;
+		return ret;
+	}
+
+
+	VectorInt	operator-(const VectorInt& other)
+	{
+		VectorInt ret;
+		ret.x = x - other.x;
+		ret.y = y - other.y;
+		return ret;
+	}
+
+	VectorInt operator*(float value)
+	{
+		VectorInt ret;
+		ret.x = x * value;
+		ret.y = y * value;
+		return ret;
+	}
+
+	void operator+=(const VectorInt& other)
+	{
+		x = x + other.x;
+		y = y + other.y;
+	}
+
+	void operator-=(const VectorInt& other)
+	{
+		x = x - other.x;
+		y = y - other.y;
+	}
+
+	float Dot(VectorInt other)
+	{
+		// 내적 예각 내 대각 길이 계산
+		return x * other.x + y * other.y;
+	}
+
+	float Cross(VectorInt other)
+	{
+		return x * other.y - y * other.x;
+	}
+
+	int32 x = 0;
+	int32 y = 0;
+};
+
 using Pos = Vector;

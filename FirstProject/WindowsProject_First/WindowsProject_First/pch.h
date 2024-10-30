@@ -13,6 +13,8 @@
 
 using namespace std;
 #include <format>
+#include <filesystem>
+namespace fs = std::filesystem;
 
 #include "Types.h"
 #include "defines.h"

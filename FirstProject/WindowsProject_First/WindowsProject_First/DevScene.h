@@ -1,5 +1,9 @@
 #pragma once
 #include "Scene.h"
+
+class actor;
+class GameObject;
+
 class DevScene :
     public Scene
 {
@@ -13,8 +17,7 @@ public:
     virtual void Render(HDC hdc) override;
 
 public:
-    Pos _playerPos = { 300,300 };
-    float _speed = 1000;
+    vector<actor*> _actors;
 
 };
 
