@@ -57,13 +57,14 @@ void FlipbookActor::Render(HDC hdc)
 	{
 		return;
 	}
+	Vector cameraPos = GET_SINGLE(SceneManager)->GetCameraPos();
 
 	const FlipbookInfo& info = _flipbook->GetInfo();
 
 	::TransparentBlt(
 		hdc,
-		static_cast<int32>(_pos.x) - info.size.x / 2,
-		static_cast<int32>(_pos.y) - info.size.y / 2,
+		static_cast<int32>(_pos.x) - info.size.x / 2 - static_cast<int32>(cameraPos.x - GWinSizeX / 2),
+		static_cast<int32>(_pos.y) - info.size.y / 2 - static_cast<int32>(cameraPos.y - GWinSizeY / 2),
 		info.size.x,
 		info.size.y,
 		info.texture->GetDC(),

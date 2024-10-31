@@ -1,2 +1,96 @@
-﻿  ResourceManager.cpp
+﻿  pch.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Types.h(134,13): warning C4244: '=': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Types.h(135,13): warning C4244: '=': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Types.h(154,22): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Types.h(159,22): warning C4244: 'return': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  
+  Actor.cpp
+  BoxCollider.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\BoxCollider.cpp(39,42): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/BoxCollider.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\BoxCollider.cpp(39,33): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/BoxCollider.cpp'을(를) 컴파일하는 중)
+  
+  CameraComponent.cpp
+  Collider.cpp
+  CollisionManager.cpp
+  Component.cpp
+  DevScene.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(76,48): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(76,36): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
+  
+  EditScene.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditScene.cpp(129,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/EditScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditScene.cpp(130,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/EditScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditScene.cpp(133,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/EditScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\EditScene.cpp(134,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/EditScene.cpp'을(를) 컴파일하는 중)
+  
+  Flipbook.cpp
+  FlipbookActor.cpp
+  Game.cpp
+  GameObject.cpp
+  InputManager.cpp
+  Object.cpp
+  Player.cpp
+  PlayerMoveScript.cpp
+  ResourceBase.cpp
+  ResourceManager.cpp
+  Scene.cpp
+  SceneManager.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  SphereCollider.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SphereCollider.cpp(44,30): warning C4244: '인수': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/SphereCollider.cpp'을(를) 컴파일하는 중)
+  
+  Sprite.cpp
+  SpriteActor.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
+  TimeManager.cpp
+  Utils.cpp
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(27,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(26,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(25,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(24,9): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(32,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(32,22): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(33,24): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp(33,18): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Utils.cpp'을(를) 컴파일하는 중)
+  
+  WindowsProject_First.cpp
+  코드를 생성하고 있습니다...
   WindowsProject_First.vcxproj -> D:\CProject\WinPie\FirstProject\WindowsProject_First\Binaries\x64\Debug\WindowsProject_First.exe

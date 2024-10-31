@@ -1,6 +1,9 @@
 #pragma once
 #include "FlipbookActor.h"
 
+class Flipbook;
+class Collider;
+
 class Player : public FlipbookActor
 {
 	using Super = FlipbookActor;
@@ -13,6 +16,9 @@ public:
 	virtual void BeginPlay() override;
 	virtual void Tick() override;
 	virtual void Render(HDC hdc) override;
+
+	virtual void OnComponentBeginOverlap(Collider* collider, Collider* other);
+	virtual void OnComponentEndOverlap(Collider* collider, Collider* other);
 
 private:
 	Flipbook* _flipbookUp = nullptr;

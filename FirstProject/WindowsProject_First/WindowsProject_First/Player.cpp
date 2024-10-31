@@ -4,6 +4,8 @@
 #include "ResourceManager.h"
 #include "Flipbook.h"
 #include "TimeManager.h"
+#include "CameraComponent.h"
+#include "Collider.h"
 
 Player::Player()
 {
@@ -14,7 +16,8 @@ Player::Player()
 	_flipbookLeft = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_MoveLeft");
 	_flipbookRight =GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_MoveRight");
 
-
+	CameraComponent* camera = new CameraComponent();
+	AddComponent(camera);
 }
 
 Player::~Player()
@@ -26,6 +29,8 @@ void Player::BeginPlay()
 	Super::BeginPlay();
 
 	SetFlipbook(_flipbookRight);
+
+
 
 }
 
@@ -62,4 +67,12 @@ void Player::Render(HDC hdc)
 {
 	Super::Render(hdc);
 
+}
+
+void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
+{
+}
+
+void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
+{
 }

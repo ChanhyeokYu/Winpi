@@ -18,9 +18,14 @@ public:
 
 	Scene* GetCurrentScene(){ return _scene; }
 
+	Vector GetCameraPos() { return _cameraPos; }
+	void SetCameraPos(Vector cameraPos) { _cameraPos = cameraPos; }
+
 private:
 	class Scene* _scene;
 	SceneType _sceneType = SceneType::None;
+
+	Vector _cameraPos = { 400,400 };
 
 };
 

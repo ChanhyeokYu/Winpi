@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Spriteactor.h"
 #include "Sprite.h"
+#include "SceneManager.h"
 
 Spriteactor::Spriteactor()
 {
@@ -31,20 +32,12 @@ void Spriteactor::Render(HDC hdc)
 
 	VectorInt size = _sprite->GetSize();
 
-	/*::BitBlt(hdc,
-		static_cast<int32>(_pos.x) - size.x / 2,
-		static_cast<int32>(_pos.y) - size.y / 2,
-		size.x,
-		size.y,
-		_sprite->GetDC(),
-		_sprite->GetPos().x,
-		_sprite->GetPos().y,
-		SRCCOPY);*/
+	Vector cameraPos = GET_SINGLE(SceneManager)->GetCameraPos();
 
-	::TransparentBlt(
+	/*::TransparentBlt(
 		hdc,
-		static_cast<int32>(_pos.x) - size.x / 2,
-		static_cast<int32>(_pos.y) - size.y / 2,
+		static_cast<int32>(_pos.x) - size.x / 2 - static_cast<int32>(cameraPos.x - GWinSizeX /2),
+		static_cast<int32>(_pos.y) - size.y / 2 - static_cast<int32>(cameraPos.y - GWinSizeY / 2),
 		size.x,
 		size.y,
 		_sprite->GetDC(),
@@ -53,6 +46,18 @@ void Spriteactor::Render(HDC hdc)
 		_sprite->GetSize().x,
 		_sprite->GetSize().y,
 		_sprite->GetTransparent()
-		);
+		);*/
+
+	::BitBlt(
+		hdc,
+		static_cast<int32>(_pos.x) - size.x / 2 - static_cast<int32>(cameraPos.x - GWinSizeX / 2),
+		static_cast<int32>(_pos.y) - size.y / 2 - static_cast<int32>(cameraPos.y - GWinSizeY / 2),
+		size.x,
+		size.y,
+		_sprite->GetDC(),
+		_sprite->GetPos().x,
+		_sprite->GetPos().y,
+		SRCCOPY
+	);
 
 }

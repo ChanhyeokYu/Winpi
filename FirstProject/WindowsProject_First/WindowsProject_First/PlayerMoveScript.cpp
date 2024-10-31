@@ -1,11 +1,13 @@
 #include "pch.h"
 #include "PlayerMoveScript.h"
 
-void PlayerMoveScript::Start()
+
+
+void PlayerMoveScript::BeginPlay()
 {
 }
 
-void PlayerMoveScript::Update()
+void PlayerMoveScript::TickComponent()
 {
 }
 

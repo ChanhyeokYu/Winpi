@@ -26,7 +26,6 @@ Texture* Texture::LoadBmp(HWND hwnd, const wstring& path)
 
 	BITMAP bit = {};
 	::GetObject(_bitmap, sizeof(BITMAP), &bit);
-
 	_size.x = bit.bmWidth;
 	_size.y = bit.bmHeight;
 

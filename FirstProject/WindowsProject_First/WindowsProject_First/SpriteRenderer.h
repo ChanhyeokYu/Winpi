@@ -6,8 +6,8 @@ class Sprite;
 class SpriteRenderer : public Component
 {
 public:
-	virtual void Start() override;
-	virtual void Update() override;
+	virtual void BeginPlay() override;
+	virtual void TickComponent() override;
 	virtual void Render(HDC hdc) override;
 
 	void SetSprite(Sprite* sprite) { _sprite = sprite; }

@@ -13,6 +13,9 @@
 #include "SpriteRenderer.h"
 #include "PlayerMoveScript.h"
 #include "Flipbook.h"
+#include "BoxCollider.h"
+#include "SphereCollider.h"
+#include "CollisionManager.h"
 
 DevScene::DevScene()
 {
@@ -68,25 +71,46 @@ void DevScene::Init()
 
 		Spriteactor* background = new Spriteactor();
 		background->SetSprite(sprtie);
-
+		background->SetLayer(LAYER_BACKGROUND);
 		const VectorInt size = sprtie->GetSize();
 		background->SetPos(Vector(size.x / 2, size.y / 2));
-		//background->SetPos(Vector{ 0,0, });
-		_actors.push_back(background);
+
+		AddActor(background);
+		
 	}
 
 	{
-		Sprite* sprtie = GET_SINGLE(ResourceManager)->GetSprite(L"Start_On");
-
 		Player* player = new Player();
-		_actors.push_back(player);
+		{
+			SphereCollider* collider = new SphereCollider();
+			collider->SetRadius(100);
+			player->AddComponent(collider);
+			GET_SINGLE(CollisionManager)->AddCollider(collider);
 
+		}
+
+		AddActor(player);
 	}
 
-
-	for (actor* Actor : _actors)
 	{
-		Actor->BeginPlay();
+		actor* player = new actor();
+		{
+			SphereCollider* collider = new SphereCollider();
+			collider->SetRadius(50);
+			player->AddComponent(collider);
+			GET_SINGLE(CollisionManager)->AddCollider(collider);
+
+			player->SetPos({ 400,200 });
+		}
+		AddActor(player);
+	}
+
+	for (const vector<actor*>& Actors : _actors)
+	{
+		for (actor* Actor : Actors)
+		{
+			Actor->BeginPlay();
+		}
 	}
 
 }
@@ -95,32 +119,51 @@ void DevScene::Update()
 {
 	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 
-	for (actor* Actor : _actors)
+	GET_SINGLE(CollisionManager)->Update();
+
+	for (const vector<actor*>& Actors : _actors)
 	{
-		Actor->Tick();
+		for (actor* Actor : Actors)
+		{
+			Actor->Tick();
+		}
 	}
-
-
+		
 }
 
 void DevScene::Render(HDC hdc)
 {
-	//Texture* tex = GET_SINGLE(ResourceManager)->GetTexture(L"Stage01");
-	//Sprite* sprite = GET_SINGLE(ResourceManager)->GetSprite(L"Start_On");
-
-	//::BitBlt(hdc, 
-	//	0, 
-	//	0, 
-	//	GWinSizeX, 
-	//	GWinSizeY, 
-	//	sprite->GetDC(), 
-	//	sprite->GetPos().x, 
-	//	sprite->GetPos().y, 
-	//	SRCCOPY);
-
-	for (actor* Actor : _actors)
+	for (const vector<actor*>& Actors : _actors)
 	{
-		Actor->Render(hdc);
+		for (actor* Actor : Actors)
+		{
+			Actor->Render(hdc);
+		}
+	}
+	
+}
+
+void DevScene::AddActor(actor* Actor)
+{
+	if (Actor == nullptr)
+	{
+		return;
 	}
 
+	_actors[Actor->GetLayer()].push_back(Actor);
+
+}
+
+void DevScene::RemoveActor(actor* Actor)
+{
+	if (Actor == nullptr)
+	{
+		return;
+	}
+
+	vector<actor*>& v = _actors[Actor->GetLayer()];
+
+	v.erase(std::remove(v.begin(), v.end(), Actor), v.end());
+
+	
 }

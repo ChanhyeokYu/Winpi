@@ -14,7 +14,7 @@ void GameObject::Start()
 {
 	for (Component* component : _components)
 	{
-		component->Start();
+		component->BeginPlay();
 	}
 }
 
@@ -22,7 +22,7 @@ void GameObject::Update()
 {
 	for (Component* component : _components)
 	{
-		component->Update();
+		component->TickComponent();
 	}
 }
 
