@@ -11,6 +11,7 @@
 #include <string>
 #include <set>
 #include <unordered_set>
+#include <functional>
 
 
 using namespace std;
