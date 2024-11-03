@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Warrior.h"
 
-Warrior::Warrior()
+Warrior::Warrior() : Player(PlayerClass::Warrior)
 {
 	Init();
 }
@@ -21,4 +21,5 @@ void Warrior::Init()
 
 void Warrior::Update()
 {
+
 }

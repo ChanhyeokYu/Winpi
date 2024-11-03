@@ -18,6 +18,15 @@
     <Filter Include="소스 파일\Object\Add">
       <UniqueIdentifier>{444d22c3-b3c1-4ce5-a9bd-6f8722807a5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Object\Add\Character">
+      <UniqueIdentifier>{8f92dbe4-6064-4676-bdc6-448518657a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{a3dd71fe-e27c-45e6-9bd6-9590b2052b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Sequence%28Scene%29">
+      <UniqueIdentifier>{f93ca5ac-b565-4a5b-a1e9-777eea21f1e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SecondProject.cpp">
@@ -36,7 +45,28 @@
       <Filter>소스 파일\Object\Add</Filter>
     </ClCompile>
     <ClCompile Include="Warrior.cpp">
-      <Filter>소스 파일\Object\Add</Filter>
+      <Filter>소스 파일\Object\Add\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Wizard.cpp">
+      <Filter>소스 파일\Object\Add\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
+    </ClCompile>
+    <ClCompile Include="MainSequence.cpp">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSequence.cpp">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,8 +85,32 @@
     <ClInclude Include="Monster.h">
       <Filter>소스 파일\Object\Add</Filter>
     </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>소스 파일\Header</Filter>
+    </ClInclude>
     <ClInclude Include="Warrior.h">
-      <Filter>소스 파일\Object\Add</Filter>
+      <Filter>소스 파일\Object\Add\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Wizard.h">
+      <Filter>소스 파일\Object\Add\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
+    </ClInclude>
+    <ClInclude Include="MainSequence.h">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSequence.h">
+      <Filter>소스 파일\Sequence%28Scene%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

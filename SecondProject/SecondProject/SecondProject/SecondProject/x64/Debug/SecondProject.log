@@ -1,2 +1,19 @@
-﻿  SecondProject.cpp
-  SecondProject.vcxproj -> D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\x64\Debug\SecondProject.exe
+﻿  BattleSequence.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(7,5): error C2259: 'BattleSequence': 추상 클래스를 인스턴스화할 수 없습니다.
+  (소스 파일 '/BattleSequence.cpp'을(를) 컴파일하는 중)
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(3,7):
+      'BattleSequence' 선언을 참조하십시오.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(7,5):
+      다음 멤버가 원인입니다.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(7,5):
+      'void BattleSequence::Init(void)': abstract입니다.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(10,18):
+      'BattleSequence::Init' 선언을 참조하십시오.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(7,5):
+      'void BattleSequence::Update(void)': abstract입니다.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\BattleSequence.h(11,18):
+      'BattleSequence::Update' 선언을 참조하십시오.
+  
+  Game.cpp
+  SecondProject.cpp
+  코드를 생성하고 있습니다...

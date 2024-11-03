@@ -5,6 +5,7 @@ enum class PlayerClass
 {
     None,
     Warrior,
+    Wizard,
 
 };
 
@@ -12,7 +13,7 @@ class Player :
     public Object
 {
 public:
-    Player();
+    Player(PlayerClass _playerclass);
     virtual ~Player() override;
 
 public:

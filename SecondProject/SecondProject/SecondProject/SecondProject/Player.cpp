@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Player.h"
 
-Player::Player() : Object(ObjectType::Player)
+Player::Player(PlayerClass _playerclass) : Object(ObjectType::Player)
 {
 }
 

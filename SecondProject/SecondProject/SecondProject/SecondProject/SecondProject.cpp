@@ -2,11 +2,18 @@
 //
 
 #include "pch.h"
+#include "Game.h"
 #include "Warrior.h"
 
 int main()
 {
-	Warrior* warrior = new Warrior;
-	delete warrior;
+
+	Game* game = new Game();
+
+	while (true)
+	{
+		game->Engine();
+	}
+
 }
 
