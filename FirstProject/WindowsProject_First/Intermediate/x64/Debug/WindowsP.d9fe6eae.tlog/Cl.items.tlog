@@ -21,13 +21,15 @@ D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Resour
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\ResourceManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\ResourceManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Scene.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Scene.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SceneManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\SceneManager.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Sound.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Sound.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SoundManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\SoundManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SphereCollider.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\SphereCollider.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Sprite.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Sprite.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SpriteActor.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\SpriteActor.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\SpriteRenderer.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\SpriteRenderer.obj
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TestButton.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\TestButton.obj
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TestPanel.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\TestPanel.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Texture.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Texture.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Tilemap.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Tilemap.obj
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TilemapActor.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\TilemapActor.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\TimeManager.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\TimeManager.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\UI.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\UI.obj
 D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\Utils.cpp;D:\CProject\WinPie\FirstProject\WindowsProject_First\Intermediate\x64\Debug\Utils.obj

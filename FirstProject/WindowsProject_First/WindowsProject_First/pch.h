@@ -12,7 +12,7 @@
 #include <set>
 #include <unordered_set>
 #include <functional>
-
+#include <assert.h>
 
 using namespace std;
 #include <format>
@@ -26,3 +26,8 @@ namespace fs = std::filesystem;
 #include "Values.h"
 
 #pragma comment(lib, "msimg32.lib")
+
+#include <mmsystem.h>
+#include <dsound.h>
+#pragma comment(lib, "winmm.lib")
+#pragma comment(lib, "dsound.lib")

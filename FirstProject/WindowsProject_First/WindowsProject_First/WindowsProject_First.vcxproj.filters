@@ -60,6 +60,9 @@
     <Filter Include="소스 파일\UI\Game">
       <UniqueIdentifier>{56aa4ce9-4df3-4fd7-b27a-86435b492d8c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Resource\Paper2D">
+      <UniqueIdentifier>{76e17aff-7bbf-4443-bccc-6f4cbd15a9a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsProject_First.cpp">
@@ -101,12 +104,6 @@
     <ClCompile Include="ResourceManager.cpp">
       <Filter>소스 파일\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>소스 파일\Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>소스 파일\Resource</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일\Objects\Game</Filter>
     </ClCompile>
@@ -127,9 +124,6 @@
     </ClCompile>
     <ClCompile Include="PlayerMoveScript.cpp">
       <Filter>소스 파일\Component\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Flipbook.cpp">
-      <Filter>소스 파일\Resource</Filter>
     </ClCompile>
     <ClCompile Include="FlipbookActor.cpp">
       <Filter>소스 파일\Objects\Unreal</Filter>
@@ -155,14 +149,29 @@
     <ClCompile Include="Button.cpp">
       <Filter>소스 파일\UI</Filter>
     </ClCompile>
-    <ClCompile Include="TestButton.cpp">
-      <Filter>소스 파일\UI\Game</Filter>
-    </ClCompile>
     <ClCompile Include="Panel.cpp">
       <Filter>소스 파일\UI</Filter>
     </ClCompile>
-    <ClCompile Include="TestPanel.cpp">
-      <Filter>소스 파일\UI\Game</Filter>
+    <ClCompile Include="Flipbook.cpp">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Tilemap.cpp">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClCompile>
+    <ClCompile Include="TilemapActor.cpp">
+      <Filter>소스 파일\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>소스 파일\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -227,12 +236,6 @@
     <ClInclude Include="Values.h">
       <Filter>소스 파일\Header</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>소스 파일\Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>소스 파일\Resource</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>소스 파일\Objects\Game</Filter>
     </ClInclude>
@@ -253,9 +256,6 @@
     </ClInclude>
     <ClInclude Include="PlayerMoveScript.h">
       <Filter>소스 파일\Component\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Flipbook.h">
-      <Filter>소스 파일\Resource</Filter>
     </ClInclude>
     <ClInclude Include="FlipbookActor.h">
       <Filter>소스 파일\Objects\Unreal</Filter>
@@ -281,14 +281,29 @@
     <ClInclude Include="Button.h">
       <Filter>소스 파일\UI</Filter>
     </ClInclude>
-    <ClInclude Include="TestButton.h">
-      <Filter>소스 파일\UI\Game</Filter>
-    </ClInclude>
     <ClInclude Include="Panel.h">
       <Filter>소스 파일\UI</Filter>
     </ClInclude>
-    <ClInclude Include="TestPanel.h">
-      <Filter>소스 파일\UI\Game</Filter>
+    <ClInclude Include="Flipbook.h">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Tilemap.h">
+      <Filter>소스 파일\Resource\Paper2D</Filter>
+    </ClInclude>
+    <ClInclude Include="TilemapActor.h">
+      <Filter>소스 파일\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>소스 파일\Resource</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,10 +4,14 @@
 class actor;
 class GameObject;
 class UI;
+class TilemapActor;
 
 class DevScene :
     public Scene
 {
+
+    using Super = Scene;
+
 public:
     DevScene();
     virtual ~DevScene() override;
@@ -17,14 +21,7 @@ public:
     virtual void Update() override;
     virtual void Render(HDC hdc) override;
 
-    void AddActor(actor* Actor);
-    void RemoveActor(actor* Actor);
-
-
-public:
-    vector<actor*> _actors[LAYER_MAXCOUNT];
-
-    vector<UI*> _uis;
+    class TilemapActor* _tilemapActor = nullptr;
 
 };
 
