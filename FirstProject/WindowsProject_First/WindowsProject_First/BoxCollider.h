@@ -17,6 +17,8 @@ public:
 	Vector GetSize() { return _size; }
 	void SetSize(Vector size) { _size = size; }
 
+	RECT GetRect();
+
 private:
 	Vector _size = {};
 

@@ -43,6 +43,11 @@ void BoxCollider::Render(HDC hdc)
 
 bool BoxCollider::CheckCollision(Collider* other)
 {
+	if (Super::CheckCollision(other) == false)
+	{
+		return false;
+	}
+
 	switch (other->GetColliderType())
 	{
 	case ColliderType::Box:
@@ -52,4 +57,20 @@ bool BoxCollider::CheckCollision(Collider* other)
 	}
 
 	return false;
+}
+
+RECT BoxCollider::GetRect()
+{
+	Vector pos = GetOwner()->GetPos();
+	Vector size = GetSize();
+
+	RECT rect =
+	{
+		static_cast<int32>(pos.x) - (size.x / 2),
+		static_cast<int32>(pos.y) - (size.y / 2),
+		static_cast <int32>(pos.x) + (size.x / 2),
+		static_cast <int32>(pos.y) + (size.y / 2)
+	};
+
+	return rect;
 }

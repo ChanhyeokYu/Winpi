@@ -26,6 +26,16 @@ public:
 	static bool CheckCollisionSphere2Box(SphereCollider* s1, BoxCollider* b2);
 	static bool CheckCollisionSphere2Sphere(SphereCollider* s1, SphereCollider* s2);
 
+	void SetCollisionLayer(COLLISION_LAYER_TYPE layer) { _collisionLayer = layer; }
+	COLLISION_LAYER_TYPE GetCollisionLayer() { return _collisionLayer; }
+
+	void SetCollisionFlag(uint32 flag) { _collisionflag = flag; }
+	uint32 GetCollisionFlag() { return _collisionflag; }
+
+	void ResetCollisionFlag() { _collisionflag = 0; }
+	void AddCollisionFlagLayer(COLLISION_LAYER_TYPE layer);
+	void RemoveCollisionFlagLayer(COLLISION_LAYER_TYPE layer);
+
 protected:
 	ColliderType _colliderType;
 	bool _showDebug = true;
@@ -33,6 +43,11 @@ protected:
 public:
 	unordered_set<Collider*> _collisionMap;
 
-	uint32 _flag = 0;
+	COLLISION_LAYER_TYPE _collisionLayer = CLT_OBJECT;
+
+	uint32 _collisionflag = 0;
+
+
+
 };
 

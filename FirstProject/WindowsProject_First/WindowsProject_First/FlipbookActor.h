@@ -18,6 +18,7 @@ public:
 	void SetFlipbook(Flipbook* flipbook);
 	void Reset();
 
+
 protected:
 	Flipbook* _flipbook = nullptr;
 	float _sumTime = 0.f;

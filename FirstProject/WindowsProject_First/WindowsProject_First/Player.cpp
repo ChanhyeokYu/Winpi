@@ -6,6 +6,7 @@
 #include "TimeManager.h"
 #include "CameraComponent.h"
 #include "Collider.h"
+#include "BoxCollider.h"
 
 Player::Player()
 {
@@ -40,7 +41,91 @@ void Player::Tick()
 
 	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 
-	if (GET_SINGLE(InputManager)->GetButton(KeyType::W))
+	TickInput();
+
+	switch (_state)
+	{
+	case PlayerState::MoveGround:
+		TickMoveGround();
+		break;
+	case PlayerState::JumpFall:
+		TickJumpFall();
+		break;
+	default:
+		break;
+	}
+
+	TickGravity();
+
+}
+
+void Player::Render(HDC hdc)
+{
+	Super::Render(hdc);
+
+}
+
+void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
+{
+	BoxCollider* b1 = dynamic_cast<BoxCollider*>(collider);
+	BoxCollider* b2 = dynamic_cast<BoxCollider*>(other);
+	if (b1 == nullptr || b2 == nullptr)
+	{
+		return;
+	}
+
+	AdjustCollisionPos(b1, b2);
+
+	if (b2->GetCollisionLayer() == CLT_GROUND)
+	{
+		SetState(PlayerState::MoveGround);
+	}
+
+}
+
+void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
+{
+	BoxCollider* b1 = dynamic_cast<BoxCollider*>(collider);
+	BoxCollider* b2 = dynamic_cast<BoxCollider*>(other);
+	if (b1 == nullptr || b2 == nullptr)
+	{
+		return;
+	}
+
+	if (b2->GetCollisionLayer() == CLT_GROUND)
+	{
+		_state = PlayerState::MoveGround;
+	}
+
+}
+
+void Player::SetState(PlayerState playerState)
+{
+	if (_state == playerState)
+	{
+		return;
+	}
+
+	switch (playerState)
+	{
+	case PlayerState::MoveGround:
+		_speed.y = 0;
+		break;
+	case PlayerState::JumpFall:
+		break;
+	default:
+		break;
+	}
+
+	_state = playerState;
+
+}
+
+void Player::TickInput()
+{
+	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+
+		/*if (GET_SINGLE(InputManager)->GetButton(KeyType::W))
 	{
 		_pos.y -= 200 * deltaTime;
 		SetFlipbook(_flipbookUp);
@@ -49,8 +134,10 @@ void Player::Tick()
 	{
 		_pos.y += 200 * deltaTime;
 		SetFlipbook(_flipbookDown);
-	}
-	else if (GET_SINGLE(InputManager)->GetButton(KeyType::A))
+	}*/
+
+
+	if (GET_SINGLE(InputManager)->GetButton(KeyType::A))
 	{
 		_pos.x -= 200 * deltaTime;
 		SetFlipbook(_flipbookLeft);
@@ -63,16 +150,85 @@ void Player::Tick()
 
 }
 
-void Player::Render(HDC hdc)
+void Player::TickMoveGround()
 {
-	Super::Render(hdc);
+	if (GET_SINGLE(InputManager)->GetButton(KeyType::SpaceBar))
+	{
+		Jump();
+	}
+
 
 }
 
-void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
+void Player::TickJumpFall()
 {
 }
 
-void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
+void Player::Jump()
 {
+	if (_state == PlayerState::JumpFall)
+	{
+		return;
+	}
+
+	SetState(PlayerState::JumpFall);
+	_speed.y = -1;
+
+}
+
+void Player::TickGravity()
+{
+	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+	if (deltaTime >0.1f)
+	{
+		return;
+	}
+	//if (_state == PlayerState::MoveGround)
+	//{
+	//	return;
+	//}
+	_speed.y += _gravity * deltaTime;
+	_pos.y += _speed.y + deltaTime;
+
+}
+
+void Player::AdjustCollisionPos(BoxCollider* b1, BoxCollider* b2)
+{
+	RECT r1 = b1->GetRect();
+	RECT r2 = b2->GetRect();
+
+	Vector pos = GetPos();
+
+	RECT intersect = {};
+	if (::IntersectRect(&intersect, &r1, &r2))
+	{
+		int32 w = intersect.right - intersect.left;
+		int32 h = intersect.bottom - intersect.top;
+
+		if (w > h)
+		{
+			if (intersect.top == r2.top)
+			{
+				pos.y -= h;	
+			}
+			else
+			{
+				pos.y += h;	
+			}
+		}
+		else
+		{
+			if (intersect.left == r2.left)
+			{
+				pos.x -= w;
+			}
+			else
+			{
+				pos.x += w;
+			}
+		}
+
+	}
+
+	SetPos(pos);
 }

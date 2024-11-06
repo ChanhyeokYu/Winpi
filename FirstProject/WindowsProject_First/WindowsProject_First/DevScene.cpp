@@ -95,8 +95,14 @@ void DevScene::Init()
 	{
 		Player* player = new Player();
 		{
-			SphereCollider* collider = new SphereCollider();
-			collider->SetRadius(100);
+			BoxCollider* collider = new BoxCollider();
+			collider->SetSize({100,100});
+			collider->SetCollisionLayer(CLT_OBJECT);
+
+			collider->ResetCollisionFlag();
+			collider->AddCollisionFlagLayer(CLT_WALL);
+			collider->AddCollisionFlagLayer(CLT_GROUND);
+
 			player->AddComponent(collider);
 			GET_SINGLE(CollisionManager)->AddCollider(collider);
 
@@ -106,18 +112,39 @@ void DevScene::Init()
 	}
 
 	{
-		/*actor* player = new actor();
+		actor* test = new actor();
+		test->SetPos({ 400,200 });
+		test->SetLayer(LAYER_OBJECT);
 		{
-			SphereCollider* collider = new SphereCollider();
-			collider->SetRadius(50);
-			player->AddComponent(collider);
-			GET_SINGLE(CollisionManager)->AddCollider(collider);
+			BoxCollider* collider = new BoxCollider();
+			collider->SetSize({ 100,100 });
+			collider->SetCollisionLayer(CLT_OBJECT);
 
-			player->SetPos({ 400,200 });
+			GET_SINGLE(CollisionManager)->AddCollider(collider);
+			test->AddComponent(collider);
 		}
-		AddActor(player);*/
+		AddActor(test);
 	}
 
+	{
+		actor* test = new actor();
+		test->SetLayer(LAYER_OBJECT);
+		test->SetPos({ 200 ,400 });
+		{
+			
+			BoxCollider* collider = new BoxCollider();
+			collider->SetSize({ 10000, 100 });
+			collider->SetCollisionLayer(CLT_GROUND);
+
+
+			GET_SINGLE(CollisionManager)->AddCollider(collider);	
+			test->AddComponent(collider);
+
+		}
+		AddActor(test);
+	}
+	
+	if(false)
 	{
 		TilemapActor* actor = new TilemapActor();
 		AddActor(actor);
@@ -135,6 +162,7 @@ void DevScene::Init()
 	}
 
 	GET_SINGLE(ResourceManager)->LoadSound(L"BGM", L"Sound\\BGM.wav");
+	if (false)
 	{
 		Sound* sound = GET_SINGLE(ResourceManager)->GetSound(L"BGM");
 		sound->Play(true);
