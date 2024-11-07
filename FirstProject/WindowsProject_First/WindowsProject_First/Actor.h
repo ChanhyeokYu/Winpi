@@ -28,6 +28,7 @@ public:
 
 protected:
 	Vector _pos = { 0,0 };
+	Vector _destPos = { 0,0 };
 	LAYER_TYPE _layer = LAYER_OBJECT;
 	vector<Component*> _components;
 };

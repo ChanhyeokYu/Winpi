@@ -8,10 +8,12 @@ enum class SceneType
 
 };
 
-enum class Dir
+enum Dir
 {
-	Left,
-	Right,
+	DIR_UP,
+	DIR_DOWN,
+	DIR_LEFT,
+	DIR_RIGHT
 
 };
 

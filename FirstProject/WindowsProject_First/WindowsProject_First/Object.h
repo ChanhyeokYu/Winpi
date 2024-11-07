@@ -33,7 +33,7 @@ protected:
 	ObjectType _objectType = ObjectType::None;
 	Stat _Stat = {};
 	Pos _pos = {};
-	Dir _dir = Dir::Left;
+	Dir _dir = Dir::DIR_LEFT;
 	float _radius = 50.f;
 
 };
