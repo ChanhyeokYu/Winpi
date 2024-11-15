@@ -12,6 +12,7 @@ Game::~Game()
 
 void Game::Engine()
 {
+	GET_SINGLE(MainSequence)->Init();
 	GET_SINGLE(MainSequence)->Update();
 
 }

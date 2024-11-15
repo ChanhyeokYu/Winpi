@@ -68,6 +68,9 @@
     <ClCompile Include="BattleSequence.cpp">
       <Filter>소스 파일\Sequence%28Scene%29</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryPool.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -111,6 +114,9 @@
     </ClInclude>
     <ClInclude Include="BattleSequence.h">
       <Filter>소스 파일\Sequence%28Scene%29</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>소스 파일\Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

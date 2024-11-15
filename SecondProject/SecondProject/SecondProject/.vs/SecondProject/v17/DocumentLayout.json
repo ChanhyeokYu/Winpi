@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MainSequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MainSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Sequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Sequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\BattleSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\BattleSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\SecondProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\SecondProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -31,32 +71,8 @@
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MainSequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\MainSequence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Sequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Sequence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Wizard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -69,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\ObjectManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\ObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -97,10 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624B11E5-18BF-43C4-80CD-27F26D9C9759}|SecondProject\\SecondProject.vcxproj|solutionrelative:SecondProject\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +122,33 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "MemoryPool.cpp",
+              "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.cpp",
+              "RelativeDocumentMoniker": "SecondProject\\MemoryPool.cpp",
+              "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.cpp",
+              "RelativeToolTip": "SecondProject\\MemoryPool.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T13:18:35.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemoryPool.h",
+              "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.h",
+              "RelativeDocumentMoniker": "SecondProject\\MemoryPool.h",
+              "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MemoryPool.h",
+              "RelativeToolTip": "SecondProject\\MemoryPool.h",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvygAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-15T13:18:29.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "BattleManager.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\BattleManager.h",
               "RelativeDocumentMoniker": "SecondProject\\BattleManager.h",
@@ -122,12 +156,11 @@
               "RelativeToolTip": "SecondProject\\BattleManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-03T10:22:24.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T10:22:24.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "BattleSequence.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\BattleSequence.h",
               "RelativeDocumentMoniker": "SecondProject\\BattleSequence.h",
@@ -140,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Game.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Game.h",
               "RelativeDocumentMoniker": "SecondProject\\Game.h",
@@ -148,64 +181,63 @@
               "RelativeToolTip": "SecondProject\\Game.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-03T10:14:01.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T10:14:01.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Game.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Game.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Game.cpp",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Game.cpp",
               "RelativeToolTip": "SecondProject\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-03T09:34:56.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "MainSequence.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.cpp",
               "RelativeDocumentMoniker": "SecondProject\\MainSequence.cpp",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.cpp",
               "RelativeToolTip": "SecondProject\\MainSequence.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-03T09:32:33.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "MainSequence.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.h",
               "RelativeDocumentMoniker": "SecondProject\\MainSequence.h",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\MainSequence.h",
               "RelativeToolTip": "SecondProject\\MainSequence.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-03T09:31:54.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Sequence.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Sequence.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Sequence.cpp",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Sequence.cpp",
               "RelativeToolTip": "SecondProject\\Sequence.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-03T05:21:45.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Sequence.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Sequence.h",
               "RelativeDocumentMoniker": "SecondProject\\Sequence.h",
@@ -213,24 +245,24 @@
               "RelativeToolTip": "SecondProject\\Sequence.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-03T05:21:43.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T05:21:43.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "ObjectManager.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.cpp",
               "RelativeDocumentMoniker": "SecondProject\\ObjectManager.cpp",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.cpp",
               "RelativeToolTip": "SecondProject\\ObjectManager.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-02T10:51:21.277Z"
+              "WhenOpened": "2024-11-02T10:51:21.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "ObjectManager.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\ObjectManager.h",
               "RelativeDocumentMoniker": "SecondProject\\ObjectManager.h",
@@ -242,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Wizard.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Wizard.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Wizard.cpp",
@@ -254,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Wizard.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Wizard.h",
               "RelativeDocumentMoniker": "SecondProject\\Wizard.h",
@@ -266,20 +298,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Defines.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Defines.h",
               "RelativeDocumentMoniker": "SecondProject\\Defines.h",
               "ToolTip": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Defines.h",
               "RelativeToolTip": "SecondProject\\Defines.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-02T10:39:47.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "pch.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\pch.cpp",
               "RelativeDocumentMoniker": "SecondProject\\pch.cpp",
@@ -291,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "Monster.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Monster.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Monster.cpp",
@@ -299,11 +331,12 @@
               "RelativeToolTip": "SecondProject\\Monster.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-02T02:38:48.396Z"
+              "WhenOpened": "2024-11-02T02:38:48.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Warrior.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Warrior.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Warrior.cpp",
@@ -311,12 +344,11 @@
               "RelativeToolTip": "SecondProject\\Warrior.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-25T02:09:47.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T02:09:47.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Warrior.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Warrior.h",
               "RelativeDocumentMoniker": "SecondProject\\Warrior.h",
@@ -328,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Player.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Player.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Player.cpp",
@@ -340,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Monster.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Monster.h",
               "RelativeDocumentMoniker": "SecondProject\\Monster.h",
@@ -352,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "Types.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Types.h",
               "RelativeDocumentMoniker": "SecondProject\\Types.h",
@@ -360,12 +392,11 @@
               "RelativeToolTip": "SecondProject\\Types.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-25T02:01:53.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T02:01:53.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Object.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Object.cpp",
               "RelativeDocumentMoniker": "SecondProject\\Object.cpp",
@@ -377,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Player.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Player.h",
               "RelativeDocumentMoniker": "SecondProject\\Player.h",
@@ -389,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 5,
               "Title": "Object.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\Object.h",
               "RelativeDocumentMoniker": "SecondProject\\Object.h",
@@ -397,11 +428,12 @@
               "RelativeToolTip": "SecondProject\\Object.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-25T01:56:01.516Z"
+              "WhenOpened": "2024-10-25T01:56:01.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "pch.h",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\pch.h",
               "RelativeDocumentMoniker": "SecondProject\\pch.h",
@@ -414,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "SecondProject.cpp",
               "DocumentMoniker": "D:\\CProject\\WinPie\\SecondProject\\SecondProject\\SecondProject\\SecondProject\\SecondProject.cpp",
               "RelativeDocumentMoniker": "SecondProject\\SecondProject.cpp",
@@ -422,8 +454,7 @@
               "RelativeToolTip": "SecondProject\\SecondProject.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-25T01:53:28.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T01:53:28.652Z"
             }
           ]
         }

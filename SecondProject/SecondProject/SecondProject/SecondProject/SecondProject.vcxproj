@@ -134,6 +134,7 @@
     <ClCompile Include="BattleSequence.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="MainSequence.cpp" />
+    <ClCompile Include="MemoryPool.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectManager.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Defines.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="MainSequence.h" />
+    <ClInclude Include="MemoryPool.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectManager.h" />
