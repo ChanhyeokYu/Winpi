@@ -2,6 +2,7 @@
 
 class actor;
 class UI;
+class Creature;
 
 class Scene
 {
@@ -15,9 +16,10 @@ public:
 	virtual void Render(HDC hdc);
 
 public:
-	void AddActor(actor* Actor);
-	void RemoveActor(actor* Actor);
+	virtual void AddActor(actor* Actor);
+	virtual void RemoveActor(actor* Actor);
 
+	Creature* GetCreatureAt(VectorInt cellPos);
 
 public:
 	vector<actor*> _actors[LAYER_MAXCOUNT];

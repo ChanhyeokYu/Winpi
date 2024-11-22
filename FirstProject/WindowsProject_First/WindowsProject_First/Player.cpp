@@ -10,6 +10,8 @@
 #include "Collider.h"
 #include "BoxCollider.h"
 #include "DevScene.h"
+#include "HitEffect.h"
+#include "Arrow.h"
 
 
 Player::Player()
@@ -29,8 +31,23 @@ Player::Player()
 	_flipbookAttack[DIR_LEFT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_AttackLeft");
 	_flipbookAttack[DIR_RIGHT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_AttackRight");
 
+	_flipbookBow[DIR_UP] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_BowUp");
+	_flipbookBow[DIR_DOWN] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_BowDown");
+	_flipbookBow[DIR_LEFT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_BowLeft");
+	_flipbookBow[DIR_RIGHT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_BowRight");
+
+	_flipbookStaff[DIR_UP] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_StaffUp");
+	_flipbookStaff[DIR_DOWN] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_StaffDown");
+	_flipbookStaff[DIR_LEFT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_StaffLeft");
+	_flipbookStaff[DIR_RIGHT] = GET_SINGLE(ResourceManager)->GetFlipbook(L"FB_StaffRight");
+
 	CameraComponent* camera = new CameraComponent();
 	AddComponent(camera);
+
+	_Stat.Hp = 100;
+	_Stat.maxHp = 100;
+	_Stat.Attack = 30;
+	_Stat.Defence = 5;
 }
 
 Player::~Player()
@@ -41,10 +58,8 @@ void Player::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetState(PlayerState::Move);
-	SetState(PlayerState::Idle);
-
-	SetCellPos({ 5,5, }, true);
+	SetState(ObjectState::Move);
+	SetState(ObjectState::Idle);
 
 }
 
@@ -52,23 +67,6 @@ void Player::Tick()
 {
 	Super::Tick();
 
-	switch (_state)
-	{
-	case PlayerState::Idle:
-		TickIdle();
-		break;
-	case PlayerState::Move:
-		TickMove();
-		break;
-	case PlayerState::Jump:
-		break;
-	case PlayerState::Skill:
-		TickSkill();
-		break;
-	default:
-		break;
-	}
-	
 }
 
 void Player::Render(HDC hdc)
@@ -79,6 +77,8 @@ void Player::Render(HDC hdc)
 
 void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
 {
+	return;
+
 	BoxCollider* b1 = dynamic_cast<BoxCollider*>(collider);
 	BoxCollider* b2 = dynamic_cast<BoxCollider*>(other);
 	if (b1 == nullptr || b2 == nullptr)
@@ -89,13 +89,15 @@ void Player::OnComponentBeginOverlap(Collider* collider, Collider* other)
 
 	if (b2->GetCollisionLayer() == CLT_GROUND)
 	{
-		SetState(PlayerState::Move);
+		SetState(ObjectState::Move);
 	}
 
 }
 
 void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
 {
+	return;
+
 	BoxCollider* b1 = dynamic_cast<BoxCollider*>(collider);
 	BoxCollider* b2 = dynamic_cast<BoxCollider*>(other);
 	if (b1 == nullptr || b2 == nullptr)
@@ -105,7 +107,7 @@ void Player::OnComponentEndOverlap(Collider* collider, Collider* other)
 
 	if (b2->GetCollisionLayer() == CLT_GROUND)
 	{
-		_state = PlayerState::Move;
+		_state = ObjectState::Move;
 	}
 
 }
@@ -125,7 +127,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::S))
@@ -136,7 +138,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::A))
@@ -147,7 +149,7 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else if (GET_SINGLE(InputManager)->GetButton(KeyType::D))
@@ -158,18 +160,35 @@ void Player::TickIdle()
 		if (CanGo(nextPos))
 		{
 			SetCellPos(nextPos);
-			SetState(PlayerState::Move);
+			SetState(ObjectState::Move);
 		}
 	}
 	else
 	{
 		_keyPressed = false;
-		if (_state == PlayerState::Idle)
+		if (_state == ObjectState::Idle)
 		{
 			UpdateAnumation();
 		}
 	}
 
+	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::KEY_1))
+	{
+		SetWeaponType(WeaponType::Sword);
+	}
+	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::KEY_2))
+	{
+		SetWeaponType(WeaponType::Bow);
+	}
+	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::KEY_3))
+	{
+		SetWeaponType(WeaponType::Staff);
+	}
+
+	if (GET_SINGLE(InputManager)->GetButton(KeyType::SpaceBar))
+	{
+		SetState(ObjectState::Skill);
+	}
 }
 
 void Player::TickMove()
@@ -177,9 +196,9 @@ void Player::TickMove()
 	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
 
 	Vector dir = (_destPos - _pos);
-	if (dir.Length() < 10.f)
+	if (dir.Length() < 5.f)
 	{
-		SetState(PlayerState::Idle);
+		SetState(ObjectState::Idle);
 	}
 	else
 	{
@@ -207,31 +226,44 @@ void Player::TickMove()
 
 void Player::TickSkill()
 {
-}
-
-void Player::SetState(PlayerState playerState)
-{
-	if (_state == playerState)
+	if (_flipbook == nullptr)
 	{
 		return;
 	}
 
-	_state = playerState;
-	UpdateAnumation();
+	if (IsAnimationEnded())
+	{
+		DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
+		if (scene == nullptr)
+		{
+			return;
+		}
 
-}
+		if (_weaponType == WeaponType::Sword)
+		{
+			Creature* creature = scene->GetCreatureAt(GetFrontCellPos());
+			if (creature)
+			{
+				scene->SpawnObject<HitEffect>(GetFrontCellPos());
+				creature->OnDamaged(this);
 
-void Player::SetDir(Dir dir)
-{
-	_dir = dir;
-	UpdateAnumation();
+			}
+		}
+		else if (_weaponType == WeaponType::Bow)
+		{
+			Arrow* arrow = scene->SpawnObject<Arrow>(_cellPos);
+			arrow->SetDir(_dir);
+		}
+		SetState(ObjectState::Idle);
+	}
+
 }
 
 void Player::UpdateAnumation()
 {
 	switch (_state)
 	{
-	case PlayerState::Idle:
+	case ObjectState::Idle:
 		if (_keyPressed)
 		{
 			SetFlipbook(_flipbookMove[_dir]);
@@ -241,50 +273,25 @@ void Player::UpdateAnumation()
 			SetFlipbook(_flipbookIdle[_dir]);
 		}
 		break;
-	case PlayerState::Move:
+	case ObjectState::Move:
 		SetFlipbook(_flipbookMove[_dir]);
 		break;
-	case PlayerState::Jump:
-		break;
-	case PlayerState::Skill:
-		SetFlipbook(_flipbookAttack[_dir]);
+	case ObjectState::Skill:
+		if (_weaponType == WeaponType::Sword)
+		{
+			SetFlipbook(_flipbookAttack[_dir]);
+		}
+		else if (_weaponType == WeaponType::Bow)
+		{
+			SetFlipbook(_flipbookBow[_dir]);
+		}
+		else if (_weaponType == WeaponType::Staff)
+		{
+			SetFlipbook(_flipbookStaff[_dir]);
+		}
 		break;
 	default:
 		break;
-	}
-}
-
-bool Player::HasReachedDest()
-{
-	Vector dir = (_destPos - _pos);
-	return (dir.Length() < 10.f);
-}
-
-bool Player::CanGo(VectorInt cellPos)
-{
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if (scene == nullptr)
-	{
-		return false;
-	}
-	return scene->CanGo(cellPos);
-}
-
-void Player::SetCellPos(VectorInt cellPos, bool teleport)
-{
-	_cellPos = cellPos;
-
-	DevScene* scene = dynamic_cast<DevScene*>(GET_SINGLE(SceneManager)->GetCurrentScene());
-	if (scene == nullptr)
-	{
-		return;
-	}
-
-	_destPos = scene->ConvertPos(cellPos);
-
-	if (teleport)
-	{
-		_pos = _destPos;
 	}
 }
 

@@ -1,8 +1,14 @@
 ﻿  DevScene.cpp
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(134,48): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(138,48): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
   
-D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(134,36): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(138,36): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(347,15): warning C4244: '초기화 중': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\FirstProject\WindowsProject_First\WindowsProject_First\DevScene.cpp(453,17): warning C4244: '=': 'int32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/DevScene.cpp'을(를) 컴파일하는 중)
   
   WindowsProject_First.vcxproj -> D:\CProject\WinPie\FirstProject\WindowsProject_First\Binaries\x64\Debug\WindowsProject_First.exe

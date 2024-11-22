@@ -11,6 +11,8 @@ void CollisionManager::Init()
 
 void CollisionManager::Update()
 {
+	return;
+
 	vector<Collider*>& colliders = _colliders;
 
 	for (int32 i = 0; i < colliders.size(); i++)

@@ -5,6 +5,7 @@
 #include "TimeManager.h"
 #include "SceneManager.h"
 #include "CollisionManager.h"
+#include "Creature.h"
 
 Scene::Scene()
 {
@@ -52,6 +53,12 @@ void Scene::Update()
 
 void Scene::Render(HDC hdc)
 {
+	vector<actor*>& actors = _actors[LAYER_OBJECT];
+	::sort(actors.begin(), actors.end(), [=](actor* a, actor* b)
+		{
+			return a->GetPos().y < b->GetPos().y;
+		});
+
 	for (const vector<actor*>& Actors : _actors)
 	{
 		for (actor* Actor : Actors)
@@ -89,4 +96,18 @@ void Scene::RemoveActor(actor* Actor)
 	v.erase(std::remove(v.begin(), v.end(), Actor), v.end());
 
 
+}
+
+Creature* Scene::GetCreatureAt(VectorInt cellPos)
+{
+	for (actor* Actor : _actors[LAYER_OBJECT])
+	{
+		Creature* creature = dynamic_cast<Creature*>(Actor);
+		if (creature && creature->GetCellPos() == cellPos)
+		{
+			return creature;
+		}
+	}
+
+	return nullptr;
 }

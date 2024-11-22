@@ -1,21 +1,15 @@
 #pragma once
-#include "FlipbookActor.h"
+#include "Creature.h"
 
 class Flipbook;
 class Collider;
 class BoxCollider;
 
-enum class PlayerState
-{
-	Idle,
-	Move,
-	Jump,
-	Skill,
-};
 
-class Player : public FlipbookActor
+
+class Player : public Creature
 {
-	using Super = FlipbookActor;
+	using Super = Creature;
 
 public:
 	Player();
@@ -32,32 +26,24 @@ public:
 
 private:
 
-	virtual void TickIdle();
-	virtual void TickMove();
-	virtual void TickSkill();
+	virtual void TickIdle() override;
+	virtual void TickMove() override;
+	virtual void TickSkill() override;
+	virtual void UpdateAnumation() override;
 
-	void SetState(PlayerState playerState);
-	PlayerState GetState() { return _state; }
-
-	void SetDir(Dir dir);
-
-	void UpdateAnumation();
+	void SetWeaponType(WeaponType weaponType) { _weaponType = weaponType; }
+	WeaponType GetWeaponType() { return _weaponType; }
 	
-	bool HasReachedDest();
-	bool CanGo(VectorInt cellPos);
-	void SetCellPos(VectorInt cellPos, bool teleport = false);
-
 private:
 
 	Flipbook* _flipbookIdle[4] = {};
 	Flipbook* _flipbookMove[4] = {};
 	Flipbook* _flipbookAttack[4] = {};
+	Flipbook* _flipbookBow[4] = {};
+	Flipbook* _flipbookStaff[4] = {};
 
-	VectorInt _cellPos = {};
-	Vector _speed = {};
-	Dir _dir = DIR_DOWN;
-	PlayerState _state = PlayerState::Idle;
 	bool _keyPressed = false;
+	WeaponType _weaponType = WeaponType::Sword;
 
 };
 

@@ -9,7 +9,6 @@
 #include "actor.h"
 #include "Spriteactor.h"
 #include "Player.h"
-#include "GameObject.h"
 #include "SpriteRenderer.h"
 #include "PlayerMoveScript.h"
 #include "Flipbook.h"
@@ -22,6 +21,7 @@
 #include "TilemapActor.h"
 #include "Sound.h"
 #include "SoundManager.h"
+#include "Monster.h"
 
 DevScene::DevScene()
 {
@@ -37,6 +37,8 @@ void DevScene::Init()
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Tile", L"Sprite\\Map\\Tile.bmp", RGB(128, 128, 128));
 
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Potion", L"Sprite\\UI\\Mp.bmp");
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Sword", L"Sprite\\Item\\Sword.bmp");
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Arrow", L"Sprite\\Item\\Arrow.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerDown", L"Sprite\\Player\\PlayerDown.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerUp", L"Sprite\\Player\\PlayerUp.bmp", RGB(128, 128, 128));
 	GET_SINGLE(ResourceManager)->LoadTexture(L"PlayerLeft", L"Sprite\\Player\\PlayerLeft.bmp", RGB(128, 128, 128));
@@ -44,6 +46,9 @@ void DevScene::Init()
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Start", L"Sprite\\UI\\Start.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Edit", L"Sprite\\UI\\Edit.bmp");
 	GET_SINGLE(ResourceManager)->LoadTexture(L"Exit", L"Sprite\\UI\\Exit.bmp");
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Snake", L"Sprite\\Monster\\Snake.bmp", RGB(128, 128, 128));
+	GET_SINGLE(ResourceManager)->LoadTexture(L"Hit", L"Sprite\\Effect\\Hit.bmp", RGB(0, 0, 0));
+
 	
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Stage01", GET_SINGLE(ResourceManager)->GetTexture(L"Stage01"));
 	GET_SINGLE(ResourceManager)->CreateSprite(L"TileO", GET_SINGLE(ResourceManager)->GetTexture(L"Tile"), 0,0,48,48);
@@ -58,6 +63,87 @@ void DevScene::Init()
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Exit_Off", GET_SINGLE(ResourceManager)->GetTexture(L"Exit"), 0, 0, 150, 150);
 	GET_SINGLE(ResourceManager)->CreateSprite(L"Exit_On", GET_SINGLE(ResourceManager)->GetTexture(L"Exit"), 150, 0, 150, 150);
 	
+	LoadMap();
+	LoadPlayer();
+	LoadMonster();
+	LoadProjectile();
+	LoadEffect();
+	LoadTilemap();
+
+	SpawnObject<Player>(VectorInt{ 5,5 });
+	SpawnObject<Monster>(VectorInt{ 7,7 });
+
+
+	Super::Init();
+}
+
+void DevScene::Update()
+{
+	Super::Update();
+
+	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
+
+	/*if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::Q))
+	{
+		GET_SINGLE(ResourceManager)->SaveTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
+	}
+	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::E))
+	{
+		GET_SINGLE(ResourceManager)->LoadTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
+	}*/
+
+	TickMonsterSpawn();
+		
+}
+
+void DevScene::Render(HDC hdc)
+{
+	Super::Render(hdc);
+
+
+	
+}
+
+void DevScene::AddActor(actor* Actor)
+{
+	Super::AddActor(Actor);
+
+	Monster* monster = dynamic_cast<Monster*>(Actor);
+	if (monster)
+	{
+		_monsterCount++;
+	}
+}
+
+void DevScene::RemoveActor(actor* Actor)
+{
+	Super::RemoveActor(Actor);
+
+	Monster* monster = dynamic_cast<Monster*>(Actor);
+	if (monster)
+	{
+		_monsterCount--;
+	}
+}
+
+void DevScene::LoadMap()
+{
+	{
+		Sprite* sprtie = GET_SINGLE(ResourceManager)->GetSprite(L"Stage01");
+
+		Spriteactor* background = new Spriteactor();
+		background->SetSprite(sprtie);
+		background->SetLayer(LAYER_BACKGROUND);
+		const VectorInt size = sprtie->GetSize();
+		background->SetPos(Vector(size.x / 2, size.y / 2));
+
+		AddActor(background);
+
+	}
+}
+
+void DevScene::LoadPlayer()
+{
 	//Idle
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
@@ -106,89 +192,128 @@ void DevScene::Init()
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackUp");
-		fb->SetInfo({ texture, L"FB_AttackUp", {200,200},0,9,3,0.5f });
+		fb->SetInfo({ texture, L"FB_AttackUp", {200,200},0,7,3,0.5f , false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackDown");
-		fb->SetInfo({ texture, L"FB_AttackDown", {200,200},0,9,3,0.5f });
+		fb->SetInfo({ texture, L"FB_AttackDown", {200,200},0,7,3,0.5f , false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackLeft");
-		fb->SetInfo({ texture, L"FB_AttackLeft", {200,200},0,9,3,0.5f });
+		fb->SetInfo({ texture, L"FB_AttackLeft", {200,200},0,7,3,0.5f , false });
 	}
 	{
 		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
 		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_AttackRight");
-		fb->SetInfo({ texture, L"FB_AttackRight", {200,200},0,9,3,0.5f });
+		fb->SetInfo({ texture, L"FB_AttackRight", {200,200},0,7,3,0.5f , false });
 	}
-
+	// BOW
 	{
-		Sprite* sprtie = GET_SINGLE(ResourceManager)->GetSprite(L"Stage01");
-
-		Spriteactor* background = new Spriteactor();
-		background->SetSprite(sprtie);
-		background->SetLayer(LAYER_BACKGROUND);
-		const VectorInt size = sprtie->GetSize();
-		background->SetPos(Vector(size.x / 2, size.y / 2));
-
-		AddActor(background);
-		
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowUp");
+		fb->SetInfo({ texture, L"FB_BowUp", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
-
 	{
-		Player* player = new Player();
-		{
-			/*BoxCollider* collider = new BoxCollider();
-			collider->SetSize({100,100});
-			collider->SetCollisionLayer(CLT_OBJECT);
-
-			collider->ResetCollisionFlag();
-			collider->AddCollisionFlagLayer(CLT_WALL);
-			collider->AddCollisionFlagLayer(CLT_GROUND);
-
-			player->AddComponent(collider);
-			GET_SINGLE(CollisionManager)->AddCollider(collider);*/
-
-		}
-
-		AddActor(player);
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowDown");
+		fb->SetInfo({ texture, L"FB_BowDown", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
-
 	{
-	/*	actor* test = new actor();
-		test->SetPos({ 400,200 });
-		test->SetLayer(LAYER_OBJECT);
-		{
-			BoxCollider* collider = new BoxCollider();
-			collider->SetSize({ 100,100 });
-			collider->SetCollisionLayer(CLT_OBJECT);
-
-			GET_SINGLE(CollisionManager)->AddCollider(collider);
-			test->AddComponent(collider);
-		}
-		AddActor(test);*/
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowLeft");
+		fb->SetInfo({ texture, L"FB_BowLeft", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
-
 	{
-		/*actor* test = new actor();
-		test->SetLayer(LAYER_OBJECT);
-		test->SetPos({ 200 ,400 });
-		{
-			
-			BoxCollider* collider = new BoxCollider();
-			collider->SetSize({ 10000, 100 });
-			collider->SetCollisionLayer(CLT_GROUND);
-
-
-			GET_SINGLE(CollisionManager)->AddCollider(collider);	
-			test->AddComponent(collider);
-
-		}
-		AddActor(test);*/
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_BowRight");
+		fb->SetInfo({ texture, L"FB_BowRight", {200, 200}, 0, 7, 5, 0.5f, false });
 	}
-	
+	// STAFF
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerUp");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffUp");
+		fb->SetInfo({ texture, L"FB_StaffUp", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerDown");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffDown");
+		fb->SetInfo({ texture, L"FB_StaffDown", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerLeft");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffLeft");
+		fb->SetInfo({ texture, L"FB_StaffLeft", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"PlayerRight");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_StaffRight");
+		fb->SetInfo({ texture, L"FB_StaffRight", {200, 200}, 0, 10, 6, 0.5f, false });
+	}
+}
+
+void DevScene::LoadMonster()
+{
+	// MOVE
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeUp");
+		fb->SetInfo({ texture, L"FB_SnakeUp", {100, 100}, 0, 3, 3, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeDown");
+		fb->SetInfo({ texture, L"FB_SnakeDown", {100, 100}, 0, 3, 0, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeLeft");
+		fb->SetInfo({ texture, L"FB_SnakeLeft", {100, 100}, 0, 3, 2, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Snake");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_SnakeRight");
+		fb->SetInfo({ texture, L"FB_SnakeRight", {100, 100}, 0, 3, 1, 0.5f });
+	}
+}
+
+void DevScene::LoadProjectile()
+{
+	// MOVE
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowUp");
+		fb->SetInfo({ texture, L"FB_ArrowUp", {100, 100}, 0, 0, 3, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowDown");
+		fb->SetInfo({ texture, L"FB_ArrowDown", {100, 100}, 0, 0, 0, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowLeft");
+		fb->SetInfo({ texture, L"FB_ArrowLeft", {100, 100}, 0, 0, 1, 0.5f });
+	}
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Arrow");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_ArrowRight");
+		fb->SetInfo({ texture, L"FB_ArrowRight", {100, 100}, 0, 0, 2, 0.5f });
+	}
+}
+
+void DevScene::LoadEffect()
+{
+	{
+		Texture* texture = GET_SINGLE(ResourceManager)->GetTexture(L"Hit");
+		Flipbook* fb = GET_SINGLE(ResourceManager)->CreateFlipbook(L"FB_Hit");
+		fb->SetInfo({ texture, L"FB_Hit", {50, 47}, 0, 5, 0, 0.5f, false });
+	}
+}
+
+void DevScene::LoadTilemap()
+{
 	{
 		TilemapActor* actor = new TilemapActor();
 		AddActor(actor);
@@ -206,41 +331,147 @@ void DevScene::Init()
 
 		}
 	}
-
-	GET_SINGLE(ResourceManager)->LoadSound(L"BGM", L"Sound\\BGM.wav");
-	{
-		Sound* sound = GET_SINGLE(ResourceManager)->GetSound(L"BGM");
-		sound->Play(true);
-	}
-
-	Super::Init();
 }
 
-void DevScene::Update()
+Player* DevScene::FindClosestPlayer(VectorInt cellPos)
 {
-	Super::Update();
+	float best = FLT_MAX;
+	Player* ret = nullptr;
 
-	float deltaTime = GET_SINGLE(TimeManager)->GetDeltaTime();
-
-	if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::Q))
+	for (actor* actor : _actors[LAYER_OBJECT])
 	{
-		GET_SINGLE(ResourceManager)->SaveTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
-	}
-	else if (GET_SINGLE(InputManager)->GetButtonDown(KeyType::E))
-	{
-		GET_SINGLE(ResourceManager)->LoadTilemap(L"Tilemap_01", L"Tilemap\\Tilemap01.txt");
+		Player* player = dynamic_cast<Player*>(actor);
+		if (player)
+		{
+			VectorInt dir = cellPos - player->GetCellPos();
+			float dist = dir.LengthSquared();
+			if (dist < best)
+			{
+				dist = best;
+				ret = player;
+			}
+		}
 	}
 
-
-		
+	return ret;
 }
 
-void DevScene::Render(HDC hdc)
+bool DevScene::FindPath(VectorInt src, VectorInt dest, vector<VectorInt>& path, int32 maxDepth)
 {
-	Super::Render(hdc);
+	int32 depth = abs(src.y - dest.y) + abs(src.x - dest.x);
+	if (depth >= maxDepth)
+		return false;
 
+	priority_queue<PQNode, vector<PQNode>, greater<PQNode>> pq;
+	map<VectorInt, int32> best;
+	map<VectorInt, VectorInt> parent;
 
-	
+	// 초기값
+	{
+		int32 cost = abs(dest.y - src.y) + abs(dest.x - src.x);
+
+		pq.push(PQNode(cost, src));
+		best[src] = cost;
+		parent[src] = src;
+	}
+
+	VectorInt front[4] =
+	{
+		{0, -1},
+		{0, 1},
+		{-1, 0},
+		{1, 0},
+	};
+
+	bool found = false;
+
+	while (pq.empty() == false)
+	{
+		// 제일 좋은 후보를 찾는다
+		PQNode node = pq.top();
+		pq.pop();
+
+		// 더 짧은 경로를 뒤늦게 찾았다면 스킵
+		if (best[node.pos] < node.cost)
+			continue;
+
+		// 목적지에 도착했으면 바로 종료
+		if (node.pos == dest)
+		{
+			found = true;
+			break;
+		}
+
+		// 방문
+		for (int32 dir = 0; dir < 4; dir++)
+		{
+			VectorInt nextPos = node.pos + front[dir];
+
+			if (CanGo(nextPos) == false)
+				continue;
+
+			int32 depth = abs(src.y - nextPos.y) + abs(src.x - nextPos.x);
+			if (depth >= maxDepth)
+				continue;
+
+			int32 cost = abs(dest.y - nextPos.y) + abs(dest.x - nextPos.x);
+			int32 bestValue = best[nextPos];
+			if (bestValue != 0)
+			{
+				// 다른 경로에서 더 빠른 길을 찾았으면 스킵
+				if (bestValue <= cost)
+					continue;
+			}
+
+			// 예약 진행
+			best[nextPos] = cost;
+			pq.push(PQNode(cost, nextPos));
+			parent[nextPos] = node.pos;
+		}
+	}
+
+	if (found == false)
+	{
+		float bestScore = FLT_MAX;
+
+		for (auto& item : best)
+		{
+			VectorInt pos = item.first;
+			int32 score = item.second;
+
+			// 동점이라면, 최초 위치에서 가장 덜 이동하는 쪽으로
+			if (bestScore == score)
+			{
+				int32 dist1 = abs(dest.x - src.x) + abs(dest.y - src.y);
+				int32 dist2 = abs(pos.x - src.x) + abs(pos.y - src.y);
+				if (dist1 > dist2)
+					dest = pos;
+			}
+			else if (bestScore > score)
+			{
+				dest = pos;
+				bestScore = score;
+			}
+		}
+	}
+
+	path.clear();
+	VectorInt pos = dest;
+
+	while (true)
+	{
+		path.push_back(pos);
+
+		// 시작점
+		if (pos == parent[pos])
+			break;
+
+		pos = parent[pos];
+	}
+
+	std::reverse(path.begin(), path.end());
+	return true;
+
 }
 
 bool DevScene::CanGo(VectorInt cellPos)
@@ -255,6 +486,11 @@ bool DevScene::CanGo(VectorInt cellPos)
 	Tile* tile = tm->GetTileAt(cellPos);
 	if (tile == nullptr)
 		return false;
+
+	if (GetCreatureAt(cellPos) != nullptr)
+	{
+		return false;
+	}
 
 	return tile->value != 1;
 }
@@ -277,5 +513,44 @@ Vector DevScene::ConvertPos(VectorInt cellPos)
 	ret.y = pos.y + cellPos.y * size + (size / 2);
 
 	return ret;
+}
+
+VectorInt DevScene::GetRandomEmptyCellPos()
+{
+	VectorInt ret = { -1,1 };
+
+	if (_tilemapActor == nullptr)
+	{
+		return ret;
+	}
+	Tilemap* tm = _tilemapActor->GetTilemap();
+	if (tm == nullptr)
+	{
+		return ret;
+	}
+
+	VectorInt size = tm->GetMapSize();
+
+	while (true)
+	{
+		int32 x = rand() % size.x;
+		int32 y = rand() % size.y;
+		VectorInt cellPos{ x,y };
+
+		if (CanGo(cellPos))
+		{
+			return cellPos;
+		}
+
+	}
+
+}
+
+void DevScene::TickMonsterSpawn()
+{
+	if (_monsterCount < DESIRED_MONSTER_COUNT)
+	{
+		SpawnObjectRandomPos<Monster>();
+	}
 }
 
