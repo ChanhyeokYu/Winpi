@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "MainSequence.h"
 #include "MemoryPool.h"
-
+#include "BattleManager.h"
 
 void MainSequence::Init()
 {
@@ -19,6 +19,7 @@ void MainSequence::Update()
 {
 	while (true)
 	{
-
+		BattleManager& manager = BattleManager::GetInstance();
+		manager.test();
 	}
 }

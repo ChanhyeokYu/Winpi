@@ -3,7 +3,7 @@
 
 Wizard::Wizard() : Player(PlayerClass::Wizard)
 {
-
+	Init();
 }
 
 Wizard::~Wizard()

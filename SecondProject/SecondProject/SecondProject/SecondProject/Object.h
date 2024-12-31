@@ -26,6 +26,9 @@ public:
 	virtual void Init() abstract;
 	virtual void Update() abstract;
 
+	virtual Stat GetStat() { return stat; }
+	virtual void SetStat(int32 damage) { stat.hp - damage; }
+	
 protected:
 	ObjectType objectType = ObjectType::None;
 	Stat stat = {};

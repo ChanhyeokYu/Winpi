@@ -3,6 +3,7 @@
 class Warrior :
     public Player
 {
+    using Super = Player;
 public:
     Warrior();
     virtual ~Warrior() override;

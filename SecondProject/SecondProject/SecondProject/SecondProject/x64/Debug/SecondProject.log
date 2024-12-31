@@ -1,8 +1,30 @@
 ﻿  BattleManager.cpp
-  BattleSequence.cpp
-  Game.cpp
-  MainSequence.cpp
-  MemoryPool.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'BattleManager.cpp'을(를) 컴파일하는 중)
+  
+  Monster.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'Monster.cpp'을(를) 컴파일하는 중)
+  
+  Object.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'Object.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
   SecondProject.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'SecondProject.cpp'을(를) 컴파일하는 중)
+  
+  Warrior.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'Warrior.cpp'을(를) 컴파일하는 중)
+  
+  Wizard.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 'Wizard.cpp'을(를) 컴파일하는 중)
+  
   코드를 생성하고 있습니다...
   SecondProject.vcxproj -> D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\x64\Debug\SecondProject.exe

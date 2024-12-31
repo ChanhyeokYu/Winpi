@@ -3,6 +3,8 @@
 class Wizard :
     public Player
 {
+    using Super = Player;
+public:
     Wizard();
     virtual ~Wizard() override;
 
