@@ -14,7 +14,7 @@ void Warrior::Init()
 {
 	stat.maxHp = 150;
 	stat.hp = stat.maxHp;
-	stat.Attach = 8;
+	stat.Attack = 8;
 	stat.Armor = 15;
 
 }

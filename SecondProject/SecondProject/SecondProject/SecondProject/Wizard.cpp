@@ -14,7 +14,7 @@ void Wizard::Init()
 {
 	stat.maxHp = 100;
 	stat.hp = stat.maxHp;
-	stat.Attach = 15;
+	stat.Attack = 15;
 	stat.Armor = 8;
 }
 

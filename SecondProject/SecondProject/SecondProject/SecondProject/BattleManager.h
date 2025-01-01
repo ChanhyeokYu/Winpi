@@ -5,20 +5,13 @@ class Object;
 class BattleManager
 {
 public:
-	static BattleManager& GetInstance()
-	{
-		static BattleManager instance;
-		return instance;
-	}
+	DECLARE_SINGLE(BattleManager);
 
 public:
-	void ApplyDamage(Object& subject, Object& target);
-	void test();
+	void ApplyDamage(Object* subject, Object* target);
 
 private:
-	BattleManager() = default;
-	BattleManager(const BattleManager& ref) = delete;
-	BattleManager(BattleManager&& ref) = delete;
+	
 
 };
 

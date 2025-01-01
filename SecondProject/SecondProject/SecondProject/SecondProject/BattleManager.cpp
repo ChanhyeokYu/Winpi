@@ -5,16 +5,8 @@
 #include "Wizard.h"
 #include "Warrior.h"
 
-void BattleManager::ApplyDamage(Object& subject, Object& target)
+void BattleManager::ApplyDamage(Object* subject, Object* target)
 {
-
+	target->GetStat().hp -= subject->GetStat().Attack;
 }
 
-void BattleManager::test()
-{
-	Wizard* wizard = new Wizard();
-	Warrior* warrior = new Warrior();
-
-	ApplyDamage(*warrior, *wizard);
-
-}

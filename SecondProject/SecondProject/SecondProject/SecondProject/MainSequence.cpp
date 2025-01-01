@@ -2,6 +2,7 @@
 #include "MainSequence.h"
 #include "MemoryPool.h"
 #include "BattleManager.h"
+#include "StartSequence.h"
 
 void MainSequence::Init()
 {
@@ -17,9 +18,10 @@ void MainSequence::Init()
 
 void MainSequence::Update()
 {
+	StartSequence* startSequence = new StartSequence();
+	startSequence->test();
+
 	while (true)
 	{
-		BattleManager& manager = BattleManager::GetInstance();
-		manager.test();
 	}
 }
