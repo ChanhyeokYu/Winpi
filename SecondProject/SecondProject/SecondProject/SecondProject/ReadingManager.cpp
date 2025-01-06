@@ -5,7 +5,7 @@
 
 using namespace nlohmann;
 
-void ReadingManager::OpenFile()
+void ReadingManager::OpenFile(string str)
 {
 	SetConsoleOutputCP(CP_UTF8);
 	ifstream file("test.json", ios::in);
@@ -19,7 +19,7 @@ void ReadingManager::OpenFile()
 	file >> j;
 
 	map<string, string> word_map;
-	for (const auto& result : j["results"])
+	for (const auto& result : j[str])
 	{
 		word_map[result["Wording"].get<string>()] = result["Wordresult"].get<string>();
 	}

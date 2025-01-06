@@ -3,6 +3,7 @@
 #include "MemoryPool.h"
 #include "BattleManager.h"
 #include "StartSequence.h"
+#include "Player.h"
 
 void MainSequence::Init()
 {
@@ -19,7 +20,7 @@ void MainSequence::Init()
 void MainSequence::Update()
 {
 	StartSequence* startSequence = new StartSequence();
-	startSequence->test();
+	startSequence->NewStart();
 
 	while (true)
 	{

@@ -134,7 +134,10 @@
     <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="BattleSequence.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="IsAttack.cpp" />
+    <ClCompile Include="ISkill.cpp" />
     <ClCompile Include="MainSequence.cpp" />
+    <ClCompile Include="MeleeAttack.cpp" />
     <ClCompile Include="MemoryPool.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Object.cpp" />
@@ -159,7 +162,10 @@
     <ClInclude Include="BattleSequence.h" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="IsAttack.h" />
+    <ClInclude Include="ISkill.h" />
     <ClInclude Include="MainSequence.h" />
+    <ClInclude Include="MeleeAttack.h" />
     <ClInclude Include="MemoryPool.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Object.h" />

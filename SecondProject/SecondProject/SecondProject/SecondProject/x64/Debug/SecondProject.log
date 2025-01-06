@@ -1,2 +1,57 @@
-﻿  ReadingManager.cpp
-  SecondProject.vcxproj -> D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\x64\Debug\SecondProject.exe
+﻿  BattleManager.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/BattleManager.cpp'을(를) 컴파일하는 중)
+  
+  ISkill.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\ISkill.cpp(4,6): error C2653: 'MeleeSkill': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 '/ISkill.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\ISkill.cpp(9,6): error C2653: 'RanageSkill': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 '/ISkill.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\ISkill.cpp(9,19): error C2084: 'void Apply(void)' 함수에 이미 본문이 있습니다.
+  (소스 파일 '/ISkill.cpp'을(를) 컴파일하는 중)
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\ISkill.cpp(4,18):
+      'Apply'의 이전 정의를 참조하십시오.
+  
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\ISkill.cpp(13,6): error C2653: 'TickSkill': 클래스 또는 네임스페이스 이름이 아닙니다.
+  (소스 파일 '/ISkill.cpp'을(를) 컴파일하는 중)
+  
+  MainSequence.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/MainSequence.cpp'을(를) 컴파일하는 중)
+  
+  MeleeAttack.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/MeleeAttack.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+  
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Player.cpp(20,2): error C2664: 'void Player::Settingskill(std::unique_ptr<ISkill,std::default_delete<ISkill>>)': 인수 1을(를) 'std::unique_ptr<MeleeSkill,std::default_delete<MeleeSkill>>'에서 'std::unique_ptr<ISkill,std::default_delete<ISkill>>'(으)로 변환할 수 없습니다.
+  (소스 파일 '/Player.cpp'을(를) 컴파일하는 중)
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Player.cpp(20,19):
+      이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Player.h(33,10):
+      'Player::Settingskill' 선언을 참조하십시오.
+      D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Player.cpp(20,2):
+      인수 목록 '(std::unique_ptr<MeleeSkill,std::default_delete<MeleeSkill>>)'을(를) 일치시키는 동안
+  
+  SecondProject.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/SecondProject.cpp'을(를) 컴파일하는 중)
+  
+  StartSequence.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/StartSequence.cpp'을(를) 컴파일하는 중)
+  
+  Warrior.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/Warrior.cpp'을(를) 컴파일하는 중)
+  
+  Wizard.cpp
+D:\CProject\WinPie\SecondProject\SecondProject\SecondProject\SecondProject\Object.h(30,47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  (소스 파일 '/Wizard.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...

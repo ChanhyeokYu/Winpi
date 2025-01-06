@@ -1,7 +1,7 @@
 #pragma once
 
 class Object;
-
+// ºÐ·ù
 class BattleManager
 {
 public:

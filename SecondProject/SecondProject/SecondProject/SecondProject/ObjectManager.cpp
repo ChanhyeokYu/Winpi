@@ -1,14 +1,6 @@
 #include "pch.h"
 #include "ObjectManager.h"
 
-ObjectManager::ObjectManager()
-{
-}
-
-ObjectManager::~ObjectManager()
-{
-
-}
 
 void ObjectManager::AddObject(Object* _object)
 {
@@ -35,5 +27,33 @@ void ObjectManager::RemoveObject(Object* _object)
 	}
 
 	_objects.erase(findIt);
+
+}
+
+void ObjectManager::AddPlayerObject(Object* playerobject)
+{
+	if (playerobject == nullptr)
+	{
+		return;
+	}
+
+	_playerObjects.push_back(playerobject);
+
+}
+
+void ObjectManager::RemovePlayerObject(Object* playerobject)
+{
+	if (playerobject == nullptr)
+	{
+		return;
+	}
+
+	auto findIt = find(_playerObjects.begin(), _playerObjects.end(), playerobject);
+	if (findIt == _playerObjects.end())
+	{
+		return;
+	}
+
+	_playerObjects.erase(findIt);
 
 }

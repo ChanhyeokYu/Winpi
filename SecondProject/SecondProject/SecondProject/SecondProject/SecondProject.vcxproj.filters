@@ -27,6 +27,12 @@
     <Filter Include="소스 파일\Sequence%28Scene%29">
       <UniqueIdentifier>{f93ca5ac-b565-4a5b-a1e9-777eea21f1e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Object\Add\Attack">
+      <UniqueIdentifier>{b6a59f9c-63c5-429e-b255-a3511ec20e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Skill">
+      <UniqueIdentifier>{f385d584-4b07-4dd2-8ae3-3028a0a83457}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SecondProject.cpp">
@@ -76,6 +82,15 @@
     </ClCompile>
     <ClCompile Include="ReadingManager.cpp">
       <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="IsAttack.cpp">
+      <Filter>소스 파일\Object\Add\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="MeleeAttack.cpp">
+      <Filter>소스 파일\Object\Add\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="ISkill.cpp">
+      <Filter>소스 파일\Skill</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +144,15 @@
     </ClInclude>
     <ClInclude Include="ReadingManager.h">
       <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="IsAttack.h">
+      <Filter>소스 파일\Object\Add\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleeAttack.h">
+      <Filter>소스 파일\Object\Add\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="ISkill.h">
+      <Filter>소스 파일\Skill</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

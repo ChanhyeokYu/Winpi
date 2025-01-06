@@ -5,7 +5,7 @@ public:
 	DECLARE_SINGLE(ReadingManager);
 public:
 
-	void OpenFile();
+	void OpenFile(string str);
 
 };
 

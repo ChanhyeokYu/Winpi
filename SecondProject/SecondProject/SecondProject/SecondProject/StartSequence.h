@@ -2,6 +2,8 @@
 
 #include "Sequence.h"
 
+class Player;
+
 class StartSequence : Sequence
 {
 public:
@@ -13,6 +15,8 @@ public:
 	virtual void Update() override;
 
 public:
-	void test();
+	void SelectStart(int32 selectNum);
+	void NewStart();
+	void ContineStart();
 };
 
